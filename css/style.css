@@ -1,15 +1,24 @@
+:root {
+    --primary: #388E3C; /* Deep green */
+    --secondary: #8BC34A; /* Light green */
+    --accent: #FFA000; /* Amber for highlights */
+    --light: #F5F5F5; /* Off-white */
+    --dark: #212121; /* Almost black */
+    --text: #424242; /* Dark gray */
+}
+
 /* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto font */
 }
 
 body {
     line-height: 1.6;
-    color: #333;
-    background-color: #e0f7fa; /* Soft teal background */
+    background-color: var(--light);
+    color: var(--text);
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -17,12 +26,12 @@ body {
 
 /* Header styles */
 header {
-    background-color: #ffab40; /* Bright orange color for header */
+    background: linear-gradient(135deg, var(--primary), var(--secondary)); /* Gradient background */
     color: white;
     padding: 1.5rem 0; /* Increased padding for a bolder look */
     margin-bottom: 2rem;
     border-radius: 0 0 8px 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Slightly heavier shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
 }
 
 nav {
@@ -48,7 +57,7 @@ nav ul li {
 }
 
 nav a {
-    color: #ffab40; /* Text color is orange */
+    color: var(--accent); /* Amber for link text */
     text-decoration: none;
     font-weight: 500;
     padding: 0.5rem 1rem;
@@ -58,7 +67,7 @@ nav a {
 
 nav a:hover {
     background-color: white; /* White background on hover */
-    color: #4caf50; /* Muted green for text on hover */
+    color: var(--primary); /* Change text color to deep green on hover */
 }
 
 /* Main content styles */
@@ -71,13 +80,13 @@ main {
 }
 
 h1, h2, h3 {
-    color: #ffab40; /* Use orange for headings */
+    color: var(--primary); /* Use deep green for headings */
     margin-bottom: 1rem;
 }
 
 h1 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #ffab40;
+    border-bottom: 2px solid var(--primary);
     padding-bottom: 0.5rem;
 }
 
@@ -89,13 +98,13 @@ h2 {
 h3 {
     font-size: 1.5rem; /* Size for subheadings */
     margin-top: 1rem;
-    color: #4caf50; /* Green for subheadings */
+    color: var(--secondary); /* Light green for subheadings */
 }
 
 p {
     margin-bottom: 1rem;
     line-height: 1.8; /* Increased line height for readability */
-    color: #555; /* Dark gray for paragraph text */
+    color: var(--text); /* Dark gray for paragraph text */
 }
 
 /* Styled lists */
@@ -112,7 +121,7 @@ li {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #ffab40;
+    background-color: var(--primary); /* Deep green for footer */
     color: white;
     border-radius: 8px 8px 0 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
@@ -120,28 +129,29 @@ footer {
 
 /* Article cards */
 .article-card {
-    border: 1px solid #ddd;
+    border: none; /* Remove border */
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     background-color: #ffffff; /* White card background */
-    transition: box-shadow 0.3s, transform 0.3s; /* Add transform transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Subtle shadow */
 }
 
 .article-card:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transform: translateY(-2px); /* Lift effect on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
 }
 
 .article-card h3 {
     margin-top: 0;
-    color: #ffab40; /* Orange color for card headings */
+    color: var(--primary); /* Deep green for card headings */
 }
 
 /* Button styles */
 .button {
     display: inline-block;
-    background-color: #4caf50; /* Muted green */
+    background-color: var(--secondary); /* Light green */
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -150,7 +160,7 @@ footer {
 }
 
 .button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #7cb342; /* Darker green on hover */
     transform: scale(1.05); /* Slight grow effect */
 }
 
@@ -169,4 +179,55 @@ footer {
     nav ul li {
         margin: 0.5rem 0;
     }
+}
+
+.hero {
+    height: 70vh;
+    background: url('images/hero-bg.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    border: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF8F00; /* Darker amber on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
 }
