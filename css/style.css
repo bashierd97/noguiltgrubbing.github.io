@@ -207,6 +207,8 @@ footer {
     color: white;
     max-width: 600px;
     padding: 2rem;
+    background-color: rgba(128, 128, 128, 0.7); /* Light gray with some transparency */
+    border-radius: 8px; /* Rounded corners for the box */
 }
 
 .hero h1 {
@@ -215,6 +217,10 @@ footer {
     margin-bottom: 1rem;
     color: white;
     border: none;
+}
+
+.hero-content p {
+    color: white; /* Ensure the subtext color is white */
 }
 
 .btn {
