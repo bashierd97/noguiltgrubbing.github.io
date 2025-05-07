@@ -46,6 +46,10 @@ nav {
     font-weight: bold;
 }
 
+.logo:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 /* Navigation styles */
 nav ul {
     display: flex;
