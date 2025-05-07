@@ -119,13 +119,17 @@ li {
 }
 
 /* Footer styles */
-.site-footer {
+footer {
     text-align: center;
     padding: 1.5rem;
     background-color: var(--primary); /* Deep green for footer */
-    color: white; /* Ensure text color is white */
+    color: white !important; /* Force text color to be white */
     border-radius: 8px 8px 0 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    color: white; /* More specific to target paragraph tags within footer */
 }
 
 /* Article cards */
