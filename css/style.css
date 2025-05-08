@@ -169,7 +169,7 @@ footer p {
 }
 
 .article-image {
-    width: 150px; /* Adjust width as needed */
+    width: 250px; /* Adjust width as needed */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Rounded corners */
 }
