@@ -153,6 +153,32 @@ footer p {
     color: var(--primary); /* Deep green for card headings */
 }
 
+.article-card-image {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+    padding: 1rem; /* Add some padding */
+    border: 1px solid #ddd; /* Optional border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 1.5rem; /* Space between cards */
+}
+
+.card-content {
+    flex: 1; /* Take available space */
+    margin-right: 1rem; /* Space between text and image */
+}
+
+.article-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.article-card-image:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+}
+
 /* Button styles */
 .button {
     display: inline-block;
