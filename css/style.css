@@ -28,8 +28,7 @@ body {
 /* Header styles */
 header {
     height: 100px; /* Set a fixed height for the header */
-    background: linear-gradient(90deg, #ffbd24, #D62976, #962FBF); /* Gradient background */
-    color: white;
+    background: linear-gradient(90deg, rgb(153, 113, 18), #D62976, #962FBF); /* Gradient background */
     padding: 1.5rem 0; /* Increased padding for a bolder look */
     margin-bottom: 2rem;
     border-radius: 0 0 8px 8px;
@@ -49,8 +48,13 @@ nav {
     text-decoration: none; /* Remove underline from link */
 }
 
+.logo:hover {
+    background-color: none;
+    color: none; 
+}
+
 .logo-image {
-    height: 75px; /* Adjust height as needed */
+    height: 85px; /* Adjust height as needed */
     width: auto; /* Maintain aspect ratio */
     margin-right: 0.5rem; /* Space between image and text */
 }
