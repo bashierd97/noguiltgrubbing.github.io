@@ -30,7 +30,7 @@ header {
     height: 120px; /* Set a fixed height for the header */
     background: linear-gradient(90deg, rgb(153, 113, 18), #D62976, #962FBF); /* Gradient background */
     padding: 1.5rem 0; /* Increased padding for a bolder look */
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border-radius: 0 0 8px 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
 }
@@ -62,7 +62,6 @@ nav {
 .logo-text {
     font-size: 2rem; /* Adjust font size as needed */
     font-weight: bold; /* Bold text */
-    color: white; /* Text color */
 }
 
 /* Navigation styles */
