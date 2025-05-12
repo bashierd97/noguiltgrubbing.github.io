@@ -49,7 +49,7 @@ nav {
 }
 
 .logo-image {
-    height: 50px; /* Adjust height as needed */
+    height: 100px; /* Adjust height as needed */
     width: auto; /* Maintain aspect ratio */
     margin-right: 0.5rem; /* Space between image and text */
 }
