@@ -46,7 +46,13 @@ nav {
     display: flex; /* Use flexbox to align image and text */
     align-items: center; /* Center items vertically */
     text-decoration: none; /* Remove underline from link */
+    background: none; /* Ensure no background on hover */
 }
+
+.logo:hover {
+    background: none; /* Remove any background on hover */
+}
+
 
 .logo-image {
     height: 85px; /* Adjust height as needed */
