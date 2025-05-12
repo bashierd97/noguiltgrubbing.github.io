@@ -51,8 +51,8 @@ nav {
 
 .logo:hover {
     background: none; /* Remove any background on hover */
+    color: white;
 }
-
 
 .logo-image {
     height: 85px; /* Adjust height as needed */
