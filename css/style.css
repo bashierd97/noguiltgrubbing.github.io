@@ -137,7 +137,7 @@ li {
 footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: linear-gradient(90deg, #FDCB58, #D62976, #962FBF); /* Gradient for footer */
+    background-color: #962FBF; /* Gradient for footer */
     color: white !important; /* Force text color to be white */
     border-radius: 8px 8px 0 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
