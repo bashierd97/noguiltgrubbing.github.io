@@ -43,14 +43,21 @@ nav {
 }
 
 .logo {
-    font-size: 2rem; /* Increased logo size */
-    font-weight: bold;
-    color: white; 
-    text-decoration: none; 
-    margin-right: 2rem; 
-    border: 2px solid #424242; /* Small white border */
-    padding: 0.2rem 0.5rem; /* Padding inside the border */
-    border-radius: 4px; /* Optional: rounded corners */
+    display: flex; /* Use flexbox to align image and text */
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.logo-image {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 0.5rem; /* Space between image and text */
+}
+
+.logo-text {
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold; /* Bold text */
+    color: white; /* Text color */
 }
 
 /* Navigation styles */
