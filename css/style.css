@@ -28,7 +28,7 @@ body {
 /* Header styles */
 header {
     height: 120px; /* Set a fixed height for the header */
-    background: linear-gradient(90deg, rgb(153, 113, 18), #D62976, #962FBF); /* Gradient background */
+    background: linear-gradient(90deg, rgb(179, 132, 23), #D62976, #962FBF); /* Gradient background */
     padding: 1.0rem 0; /* Increased padding for a bolder look */
     margin-bottom: 1rem;
     border-radius: 0 0 8px 8px;
