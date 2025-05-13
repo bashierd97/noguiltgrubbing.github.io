@@ -198,22 +198,6 @@ footer p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
 }
 
-/* Button styles */
-.button {
-    display: inline-block;
-    background-color: var(--secondary); /* Light green */
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.button:hover {
-    background-color: #7cb342; /* Darker green on hover */
-    transform: scale(1.05); /* Slight grow effect */
-}
-
 /* Responsive design */
 @media (max-width: 768px) {
     nav {
@@ -284,6 +268,6 @@ footer p {
 }
 
 .btn:hover {
-    background-color: #FDCB58; /* Darker amber on hover */
+    background-color: #c99b30; /* Darker amber on hover */
     transform: translateY(-2px); /* Lift effect on hover */
 }
