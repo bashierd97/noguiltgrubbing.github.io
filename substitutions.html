@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Substitutions | NGG</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Substitutions | No Guilt Grubbing</title>
+    <meta name="description" content="Easy, tasty food swaps for breakfast, entrees, desserts, and snacks—balanced choices you can make this week." />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <!-- Accessible skip link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="NGG Logo" class="logo-image"> <!-- Logo image -->
-                <span class="logo-text">No Guilt Grubbing</span> <!-- Logo text -->
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="substitutions.html">Substitutions</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <nav aria-label="Main">
+                <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
+                    <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+                    <span class="logo-text">No Guilt Grubbing</span>
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="meal-planning.html">Meal Planning</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h1>Healthy (and tasty) Substitutions</h1>
-        <p>Discover delicious, nutritious recipes that support your health goals without sacrificing flavor.</p>
+    <main id="main" class="wrapper">
+        <section class="section" aria-labelledby="subs-heading">
+            <h1 id="subs-heading">Healthy (and tasty) substitutions</h1>
+            <p>Make small swaps that add up—keep the flavors you love while boosting nutrition, balance, and satisfaction.</p>
+        </section>
 
-        <div class="article-card-image">
-            <div class="card-content">
-                <h2>Breakfast Substitution</h2>
-                <p>Start your day off with beloved breakfast items that promote a healthier and more energetic start to your day.</p>
-                <a href="breakfast.html" class="btn">Explore Breakfast Items</a> <!-- Button linking to breakfast.html -->
-            </div>
-            <img src="foodpics/breakfast.jpg" alt="Healthy Breakfast Substitutions" class="article-image">
-        </div>
+        <section class="section" aria-labelledby="categories-heading">
+            <h2 id="categories-heading" class="sr-only">Substitution categories</h2>
 
-        <div class="article-card-image">
-            <div class="card-content">
-                <h2>Entree Substitutions</h2>
-                <p>Discover delicious alternatives for your favorite entrees that will keep your meals healthy without sacrificing flavor.</p>
-                <a href="entrees.html" class="btn">Explore Entrees</a> <!-- Button linking to entrees.html -->
-            </div>
-            <img src="foodpics/entree.jpg" alt="Healthy Entrees Substitutions" class="article-image">
-        </div>
+            <!-- Card grid -->
+            <div class="grid">
+                <article class="card">
+                    <img src="foodpics/breakfast.jpg" alt="Bowl of yogurt with fruit and granola" class="article-image" />
+                    <h3>Breakfast substitutions</h3>
+                    <p>Quick morning wins—simple swaps for creamers, cereals, and spreads that keep energy steady.</p>
+                    <a href="breakfast.html" class="btn">Explore breakfast</a>
+                </article>
 
-        <div class="article-card-image">
-            <div class="card-content">
-                <h2>Dessert Substitutions</h2>
-                <p>Indulge in sweet alternatives that satisfy your cravings without compromising your health.</p>
-                <a href="desserts.html" class="btn">Explore Desserts</a> <!-- Button linking to desserts.html -->
-            </div>
-            <img src="foodpics/dessert.jpg" alt="Healthy Dessert Substitutions" class="article-image">
-        </div>
+                <article class="card">
+                    <img src="foodpics/entree.jpg" alt="Colorful lean protein and veggies bowl" class="article-image" />
+                    <h3>Entree substitutions</h3>
+                    <p>Flexible mains—upgrade pastas, sauces, and proteins without losing comfort or flavor.</p>
+                    <a href="entrees.html" class="btn">Explore entrees</a>
+                </article>
 
-        <div class="article-card-image">
-            <div class="card-content">
-                <h2>Snack Substitutions</h2>
-                <p>Delicious snack swaps that keep you satisfied and nourished throughout the day.</p>
-                <a href="snacks.html" class="btn">Explore Snacks</a> <!-- Button linking to snacks.html -->
+                <article class="card">
+                    <img src="foodpics/dessert.jpg" alt="Chocolate dessert topped with berries" class="article-image" />
+                    <h3>Dessert substitutions</h3>
+                    <p>Sweet tooth satisfied—smarter sugars, richer textures, and portion-friendly treats.</p>
+                    <a href="desserts.html" class="btn">Explore desserts</a>
+                </article>
+
+                <article class="card">
+                    <img src="foodpics/snacks.jpg" alt="Assortment of nuts, fruit, and yogurt" class="article-image" />
+                    <h3>Snack substitutions</h3>
+                    <p>Between-meal balance—salty, crunchy, sweet options that actually tide you over.</p>
+                    <a href="snacks.html" class="btn">Explore snacks</a>
+                </article>
             </div>
-            <img src="foodpics/snacks.jpg" alt="Healthy Snack Substitutions" class="article-image">    
-        </div>
+        </section>
     </main>
 
     <footer>

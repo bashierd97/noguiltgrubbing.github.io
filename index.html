@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>No Guilt Grubbing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Simple, delicious food swaps, balanced nutrition basics, and weekly meal planning that fits real life." />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <!-- Accessible skip link -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="NGG Logo" class="logo-image"> <!-- Logo image -->
-                <span class="logo-text">No Guilt Grubbing</span> <!-- Logo text -->
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="substitutions.html">Substitutions</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <nav aria-label="Main">
+                <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home" aria-current="page">
+                    <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+                    <span class="logo-text">No Guilt Grubbing</span>
+                </a>
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="substitutions.html">Substitutions</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="meal-planning.html">Meal Planning</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Nourish Your Body, Delight Your Palate</h1>
-            <p>Discover the art of healthy eating with our curated collection of nutritious subsititutions, recipes, and expert guidance.</p>
-            <a href="substitutions.html" class="btn">Explore</a>
+
+    <!-- Hero -->
+    <section class="hero" role="banner" aria-label="Intro">
+        <div class="wrapper">
+            <div class="hero-content">
+                <h1>Nourish your body, enjoy your food</h1>
+                <p>Simple, tasty substitutions and balanced meal plans that fit your real life—no guilt, just good grub.</p>
+                <a href="substitutions.html" class="btn">Explore substitutions</a>
+            </div>
         </div>
     </section>
-    <main>
-        <h1>Welcome to No Guilt Grubbing</h1>
-        <p>Discover the path to a healthier lifestyle through balanced nutrition, delicious recipes, and practical meal planning. </p>
 
-        <div class="article-card">
-            <h2>Featured Article: The Basics of Balanced Nutrition</h2>
-            <p>Learn about macronutrients, micronutrients, and how to create balanced meals that fuel your body effectively.</p>
-            <a href="nutrition.html" class="btn">Read more</a>
-        </div>
+    <main id="main" class="wrapper">
+        <!-- Replace former duplicate H1 with concise intro -->
+        <section class="section" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Start with the basics</h2>
+            <p>Build confidence with balanced nutrition, smart swaps, and weekly plans designed to be practical, budget-friendly, and delicious.</p>
+        </section>
 
-        <div class="article-card">
-            <h2>Easy, Healthy, and Delicious Food Substitutions</h2>
-            <p>Start your day right with these nutritious breakfast options that take less than 10 minutes to prepare.</p>
-            <a href="recipes.html" class="btn">View recipes</a>
-        </div>
+        <!-- Feature cards -->
+        <section class="section" aria-labelledby="features-heading">
+            <h2 id="features-heading" class="sr-only">Featured sections</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Balanced Nutrition</h3>
+                    <p>Macros made simple—learn how to build satisfying, balanced plates without overthinking.</p>
+                    <a href="nutrition.html" class="btn">Read basics</a>
+                </article>
 
-        <div class="article-card">
-            <h2>Weekly Meal Planning Guide</h2>
-            <p>Save time and eat healthier with our step-by-step guide to effective meal planning.</p>
-            <a href="meal-planning.html" class="btn">Learn more</a>
-        </div>
+                <article class="card">
+                    <h3>Healthy Substitutions</h3>
+                    <p>Easy swaps you can make this week (e.g., Greek yogurt for sour cream, cauliflower rice for white rice).</p>
+                    <a href="substitutions.html" class="btn">See swaps</a>
+                </article>
+
+                <article class="card">
+                    <h3>Meal Planning</h3>
+                    <p>Templates, grocery lists, and two sample weeks to save time and eat well—consistently.</p>
+                    <a href="meal-planning.html" class="btn">Start planning</a>
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer class="site-footer">
