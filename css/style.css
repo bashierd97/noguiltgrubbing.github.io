@@ -301,72 +301,98 @@ footer p { color: #fff; }
     --page:   #F3F4F6;  /* soft gray */
     --surface:#FAFAFB;  /* off-white for content/cards */
     --border: #E9EAEE;  /* hairline borders */
-  
+
     /* text */
     --text:   #3A3A3A;
     --muted:  #6B6B6B;
-  }
+}
   
-  /* Apply surfaces globally (uses tokens defined above) */
-  body { background-color: var(--page); color: var(--text); }
-  main {
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    box-shadow: 0 2px 8px rgba(0,0,0,.05);
-  }
-  .article-card, .card {
-    background-color: var(--surface);
-    border: 1px solid var(--border);
-    box-shadow: 0 2px 8px rgba(0,0,0,.05);
-  }
-  .article-image { border: 1px solid var(--border); }
-  p { color: var(--text); }
-  ::selection { background: rgba(150, 47, 191, .18); }
-  
-  /* ---------- BRAND TINT (light mode) ---------- */
-  /* Activated by <html class="theme-tint"> */
-  .theme-tint {
-    --page:    #F6F1FA;  /* very light lavender that pairs with #962FBF */
-    --surface: #FEFBFF;  /* near-white with a hint of lilac */
-    --border:  #E9DFF5;  /* lavender hairline */
-    --text:    #352D3B;  /* slightly warmer/darker for contrast */
-    --muted:   #6E6477;
-  }
-  
-  /* Small contrast improvements on tint */
-  .theme-tint .hero-content { background-color: rgba(33,33,33,.50); }
-  .theme-tint nav a:hover { background-color: rgba(255,255,255,.92); color: var(--primary); }
-  .theme-tint .btn { box-shadow: 0 2px 8px rgba(214,41,118,.25); }
-  
-  /* ---------- AUTO DARK MODE ---------- */
-  @media (prefers-color-scheme: dark) {
-    /* Default dark */
-    :root {
-      --page:    #0F1116;  /* deep charcoal with a cool tone */
-      --surface: #171A20;  /* card/content surface */
-      --border:  #232732;  /* subtle separators */
-      --text:    #E8EAF0;  /* light text */
-      --muted:   #AEB5C2;
-    }
-  
-    body { color: var(--text); }
-    main, .article-card, .card { box-shadow: none; }
-    nav a:hover { background-color: rgba(255,255,255,.12); color: #fff; }
-    .hero::before { background: rgba(0,0,0,.5); }
-  }
-  
-  /* Brand-tinted dark (only when class present + OS dark) */
-  @media (prefers-color-scheme: dark) {
-    .theme-tint {
-      --page:    #0E0B12;  /* subtly purple-leaning charcoal */
-      --surface: #17121E;  /* deep eggplant surface */
-      --border:  #2B2135;  /* lavender/eggplant border */
-      --text:    #ECE6F2;  /* lavender white */
-      --muted:   #BFB4CA;
-    }
-  
-    .theme-tint nav a:hover { background-color: rgba(255,255,255,.14); color: #fff; }
-    .theme-tint .btn { box-shadow: none; } /* cleaner on dark */
-  }
-  
+/* Apply surfaces globally (uses tokens defined above) */
+body { background-color: var(--page); color: var(--text); }
+main {
+background-color: var(--surface);
+border: 1px solid var(--border);
+box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.article-card, .card {
+background-color: var(--surface);
+border: 1px solid var(--border);
+box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.article-image { border: 1px solid var(--border); }
+p { color: var(--text); }
+::selection { background: rgba(150, 47, 191, .18); }
+
+/* ---------- BRAND TINT (light mode) ---------- */
+/* Activated by <html class="theme-tint"> */
+.theme-tint {
+--page:    #F6F1FA;  /* very light lavender that pairs with #962FBF */
+--surface: #FEFBFF;  /* near-white with a hint of lilac */
+--border:  #E9DFF5;  /* lavender hairline */
+--text:    #352D3B;  /* slightly warmer/darker for contrast */
+--muted:   #6E6477;
+}
+
+/* Small contrast improvements on tint */
+.theme-tint .hero-content { background-color: rgba(33,33,33,.50); }
+.theme-tint nav a:hover { background-color: rgba(255,255,255,.92); color: var(--primary); }
+.theme-tint .btn { box-shadow: 0 2px 8px rgba(214,41,118,.25); }
+
+/* ---------- AUTO DARK MODE ---------- */
+@media (prefers-color-scheme: dark) {
+/* Default dark */
+:root {
+    --page:    #0F1116;  /* deep charcoal with a cool tone */
+    --surface: #171A20;  /* card/content surface */
+    --border:  #232732;  /* subtle separators */
+    --text:    #E8EAF0;  /* light text */
+    --muted:   #AEB5C2;
+}
+
+body { color: var(--text); }
+main, .article-card, .card { box-shadow: none; }
+nav a:hover { background-color: rgba(255,255,255,.12); color: #fff; }
+.hero::before { background: rgba(0,0,0,.5); }
+}
+
+/* Brand-tinted dark (only when class present + OS dark) */
+@media (prefers-color-scheme: dark) {
+.theme-tint {
+    --page:    #0E0B12;  /* subtly purple-leaning charcoal */
+    --surface: #17121E;  /* deep eggplant surface */
+    --border:  #2B2135;  /* lavender/eggplant border */
+    --text:    #ECE6F2;  /* lavender white */
+    --muted:   #BFB4CA;
+}
+
+.theme-tint nav a:hover { background-color: rgba(255,255,255,.14); color: #fff; }
+.theme-tint .btn { box-shadow: none; } /* cleaner on dark */
+}
+
+  /* Card layout helpers for the substitutions grid */
+.card { display: flex; flex-direction: column; }
+.card h3 { margin-top: 12px; }
+.card ul { margin: 8px 0 16px 18px; }
+.card p:last-child { margin-top: auto; } /* aligns CTA buttons across cards */
+
+/* Uniform images */
+.card .article-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;   /* consistent tile look */
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Breadcrumb */
+.breadcrumb { font-size: 14px; color: var(--muted); margin: var(--space-2) 0 var(--space-1); }
+.breadcrumb ol { list-style: none; display: flex; gap: 6px; flex-wrap: wrap; margin: 0; padding: 0; }
+.breadcrumb li { display: inline-flex; align-items: center; }
+.breadcrumb li::after { content: "/"; margin: 0 6px; color: var(--muted); }
+.breadcrumb li:last-child::after { content: ""; }
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; color: var(--text); }
+.breadcrumb [aria-current="page"] { color: var(--text); font-weight: 600; }
+
   

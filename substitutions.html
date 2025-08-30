@@ -1,79 +1,125 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-tint">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healthy Substitutions | No Guilt Grubbing</title>
-    <meta name="description" content="Easy, tasty food swaps for breakfast, entrees, desserts, and snacks—balanced choices you can make this week." />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Substitutions | No Guilt Grubbing</title>
+  <meta name="description" content="Easy, tasty food swaps for breakfast, entrees, desserts, and snacks—balanced choices you can make this week." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Accessible skip link -->
-    <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
-        <div class="header-inner">
-            <nav aria-label="Main">
-                <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
-                    <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
-                    <span class="logo-text">No Guilt Grubbing</span>
-                </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
-                    <li><a href="nutrition.html">Nutrition</a></li>
-                    <li><a href="meal-planning.html">Meal Planning</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <div class="header-inner">
+      <nav aria-label="Main">
+        <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
+          <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+          <span class="logo-text">No Guilt Grubbing</span>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="meal-planning.html">Meal Planning</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main id="main" class="wrapper">
-        <section class="section" aria-labelledby="subs-heading">
-            <h1 id="subs-heading">Healthy (and tasty) substitutions</h1>
-            <p>Make small swaps that add up—keep the flavors you love while boosting nutrition, balance, and satisfaction.</p>
-        </section>
+  <!-- Hero -->
+  <section class="hero" role="banner" aria-label="Healthy substitutions">
+    <div class="wrapper">
+      <div class="hero-content">
+        <h1>Healthy substitutions</h1>
+        <p>Make small, delicious swaps that keep your favorite flavors while boosting balance, fiber, and protein.</p>
+        <a class="btn" href="#categories">See categories</a>
+      </div>
+    </div>
+  </section>
 
-        <section class="section" aria-labelledby="categories-heading">
-            <h2 id="categories-heading" class="sr-only">Substitution categories</h2>
+  <main id="main" class="wrapper">
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Substitutions</li>
+      </ol>
+    </nav>
 
-            <!-- Card grid -->
-            <div class="grid">
-                <article class="card">
-                    <img src="foodpics/breakfast.jpg" alt="Bowl of yogurt with fruit and granola" class="article-image" />
-                    <h3>Breakfast substitutions</h3>
-                    <p>Quick morning wins—simple swaps for creamers, cereals, and spreads that keep energy steady.</p>
-                    <a href="breakfast.html" class="btn">Explore breakfast</a>
-                </article>
+    <!-- Card grid -->
+    <section class="section" id="categories" aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="sr-only">Substitution categories</h2>
 
-                <article class="card">
-                    <img src="foodpics/entree.jpg" alt="Colorful lean protein and veggies bowl" class="article-image" />
-                    <h3>Entree substitutions</h3>
-                    <p>Flexible mains—upgrade pastas, sauces, and proteins without losing comfort or flavor.</p>
-                    <a href="entrees.html" class="btn">Explore entrees</a>
-                </article>
+      <div class="grid">
+        <article class="card" role="article">
+          <img
+            src="foodpics/breakfast.jpg"
+            alt="Bowl of yogurt with fruit and granola"
+            class="article-image"
+            loading="lazy" width="800" height="600" />
+          <h3>Breakfast swaps</h3>
+          <ul>
+            <li>Greek yogurt → sour cream</li>
+            <li>Keto-friendly toast → white bread</li>
+            <li>Chia pudding → sugary yogurt</li>
+          </ul>
+          <p><a href="breakfast.html" class="btn">Explore breakfast</a></p>
+        </article>
 
-                <article class="card">
-                    <img src="foodpics/dessert.jpg" alt="Chocolate dessert topped with berries" class="article-image" />
-                    <h3>Dessert substitutions</h3>
-                    <p>Sweet tooth satisfied—smarter sugars, richer textures, and portion-friendly treats.</p>
-                    <a href="desserts.html" class="btn">Explore desserts</a>
-                </article>
+        <article class="card">
+          <img
+            src="foodpics/entree.jpg"
+            alt="Lean protein and colorful vegetables bowl"
+            class="article-image"
+            loading="lazy" width="800" height="600" />
+          <h3>Entree swaps</h3>
+          <ul>
+            <li>Cauliflower rice → white rice</li>
+            <li>Zucchini noodles → pasta</li>
+            <li>Chickpeas → ground meat</li>
+          </ul>
+          <p><a href="entrees.html" class="btn">Explore entrees</a></p>
+        </article>
 
-                <article class="card">
-                    <img src="foodpics/snacks.jpg" alt="Assortment of nuts, fruit, and yogurt" class="article-image" />
-                    <h3>Snack substitutions</h3>
-                    <p>Between-meal balance—salty, crunchy, sweet options that actually tide you over.</p>
-                    <a href="snacks.html" class="btn">Explore snacks</a>
-                </article>
-            </div>
-        </section>
-    </main>
+        <article class="card">
+          <img
+            src="foodpics/dessert.jpg"
+            alt="Chocolate dessert topped with berries"
+            class="article-image"
+            loading="lazy" width="800" height="600" />
+          <h3>Dessert swaps</h3>
+          <ul>
+            <li>Avocado mousse → heavy cream mousse</li>
+            <li>Banana “nice” cream → ice cream</li>
+            <li>Chia pudding → custard</li>
+          </ul>
+          <p><a href="desserts.html" class="btn">Explore desserts</a></p>
+        </article>
 
-    <footer>
-        <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
-    </footer>
+        <article class="card">
+          <img
+            src="foodpics/snacks.jpg"
+            alt="Assortment of nuts, fruit, and yogurt"
+            class="article-image"
+            loading="lazy" width="800" height="600" />
+          <h3>Snack swaps</h3>
+          <ul>
+            <li>Veggie sticks → chips</li>
+            <li>Almonds → candy</li>
+            <li>Air-popped popcorn → pretzels</li>
+          </ul>
+          <p><a href="snacks.html" class="btn">Explore snacks</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+  </footer>
 </body>
 </html>
