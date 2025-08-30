@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nutrition Basics | No Guilt Grubbing</title>
-  <meta name="description" content="Nutrition basics made simple—macronutrients, micronutrients, and hydration tips to build balanced, satisfying meals." />
+  <meta name="description" content="Nutrition made simple—macronutrients, micronutrients, hydration, and how to build balanced plates you’ll actually enjoy." />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -30,52 +30,111 @@
     </div>
   </header>
 
+  <!-- Hero -->
+  <section class="hero" role="banner" aria-label="Nutrition basics">
+    <div class="wrapper">
+      <div class="hero-content">
+        <h1>Nutrition basics</h1>
+        <p>Simple guidance for balanced meals: understand macros &amp; micros, hydrate smart, and build plates that keep you satisfied.</p>
+        <a class="btn" href="#topics">Explore topics</a>
+      </div>
+    </div>
+  </section>
+
   <main id="main" class="wrapper">
-    <section class="section" aria-labelledby="nutrition-heading">
-      <h1 id="nutrition-heading">Nutrition basics</h1>
-      <p>Understanding nutrition is the foundation of a healthy diet. Here are the essentials you need to build balanced, satisfying meals—without overthinking.</p>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Nutrition</li>
+      </ol>
+    </nav>
+
+    <!-- Topic cards -->
+    <section class="section" id="topics" aria-labelledby="topics-heading">
+      <h2 id="topics-heading" class="sr-only">Core nutrition topics</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Macronutrients</h3>
+          <ul>
+            <li>Carbs = main energy (favor complex)</li>
+            <li>Protein = repair &amp; fullness</li>
+            <li>Fats = hormones &amp; absorption</li>
+          </ul>
+          <p><a href="#macros" class="btn">Learn macros</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Micronutrients</h3>
+          <ul>
+            <li>Vitamins &amp; minerals power systems</li>
+            <li>Colorful produce = good coverage</li>
+            <li>Fortified foods can help fill gaps</li>
+          </ul>
+          <p><a href="#micros" class="btn">Learn micros</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Hydration</h3>
+          <ul>
+            <li>~8–10 cups daily (more if active)</li>
+            <li>Clear/light urine is a good sign</li>
+            <li>Add electrolytes when sweating</li>
+          </ul>
+          <p><a href="#hydration" class="btn">Hydration tips</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Balanced plate</h3>
+          <ul>
+            <li>Protein + veg + smart carbs + fats</li>
+            <li>Portions that fit your day</li>
+            <li>Make it tasty to keep it consistent</li>
+          </ul>
+          <p><a href="meal-planning.html" class="btn">See meal planning</a></p>
+        </article>
+      </div>
     </section>
 
-    <!-- Macronutrients -->
-    <section class="section" aria-labelledby="macros-heading">
+    <!-- Detailed sections -->
+    <section class="section" id="macros" aria-labelledby="macros-heading">
       <h2 id="macros-heading">Macronutrients: the big three</h2>
 
       <div class="grid">
         <article class="card">
           <h3>Carbohydrates</h3>
-          <p>Primary energy source. Choose complex carbs like whole grains, fruit, and veggies for steady energy and fiber that supports digestion. Limit refined sugars to keep energy stable.</p>
+          <p>Primary energy source. Choose complex carbs (whole grains, fruit, vegetables) for steady energy and digestion-friendly fiber; limit refined sugars for fewer spikes.</p>
         </article>
 
         <article class="card">
           <h3>Proteins</h3>
-          <p>Builds/repairs tissues and supports immunity. Mix lean meats, fish, eggs, beans, lentils, tofu, and nuts to cover essential amino acids and keep you fuller longer.</p>
+          <p>Builds/repairs tissues and supports immunity. Mix lean meats, fish, eggs, tofu, beans, lentils, and nuts to cover amino acids and improve fullness.</p>
         </article>
 
         <article class="card">
           <h3>Fats</h3>
-          <p>Crucial for hormones, cell health, and absorbing fat-soluble vitamins. Favor unsaturated fats (avocado, olive oil, nuts, seeds) and minimize trans fats and excess saturated fat.</p>
+          <p>Support hormones, cell health, and vitamin absorption. Favor unsaturated fats (olive oil, avocado, nuts, seeds); minimize trans fats and excess saturated fats.</p>
         </article>
       </div>
 
-      <p style="margin-top: var(--space-2);">Bringing all three together at each meal helps with steady energy, better recovery, and long-term consistency.</p>
+      <p style="margin-top: var(--space-2);">Bringing all three to each meal = steadier energy, better recovery, and easier consistency.</p>
     </section>
 
-    <!-- Micronutrients -->
-    <section class="section" aria-labelledby="micros-heading">
+    <section class="section" id="micros" aria-labelledby="micros-heading">
       <h2 id="micros-heading">Micronutrients: vitamins &amp; minerals</h2>
-      <p>Needed in smaller amounts, but vital for everything from immunity to bone health:</p>
+      <p>Small amounts, big roles. A colorful, varied diet usually covers most needs:</p>
       <ul>
         <li><strong>Vitamin C:</strong> Immune support (citrus, bell peppers)</li>
         <li><strong>Calcium:</strong> Bones/teeth (dairy, fortified milks, leafy greens)</li>
         <li><strong>Iron:</strong> Oxygen transport (red meat, beans, spinach)</li>
-        <li><strong>Vitamin D:</strong> Bone health &amp; immunity (sunlight, fatty fish, fortified foods)</li>
+        <li><strong>Vitamin D:</strong> Bone &amp; immune health (sunlight, fatty fish, fortified foods)</li>
       </ul>
     </section>
 
-    <!-- Hydration -->
-    <section class="section" aria-labelledby="hydration-heading">
+    <section class="section" id="hydration" aria-labelledby="hydration-heading">
       <h2 id="hydration-heading">Hydration</h2>
-      <p>Water supports temperature regulation, digestion, and cognition. Aim for ~8–10 cups daily (more if active or in heat). Signs you need more: fatigue, headaches, dark urine.</p>
+      <p>Water supports temperature regulation, digestion, and cognition. Aim for ~8–10 cups daily (more with activity/heat). Signs to drink more: fatigue, headaches, dark urine.</p>
     </section>
 
     <section class="section">
