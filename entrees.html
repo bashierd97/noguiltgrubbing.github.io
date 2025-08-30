@@ -1,70 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entree Substitutions | NGG</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entree Substitutions | No Guilt Grubbing</title>
+  <meta name="description" content="Healthier entree substitutions—simple swaps like cauliflower rice, zoodles, and chickpeas to upgrade your favorite mains." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="NGG Logo" class="logo-image"> <!-- Logo image -->
-                <span class="logo-text">No Guilt Grubbing</span> <!-- Logo text -->
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="substitutions.html">Substitutions</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <h1>Healthier Entree Substitutions</h1>
-        <p>Making small changes to your meals can lead to significant health benefits. Here are some delicious and fulfilling entree substitutions that you can easily incorporate into your cooking:</p>
+  <header>
+    <div class="header-inner">
+      <nav aria-label="Main">
+        <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
+          <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+          <span class="logo-text">No Guilt Grubbing</span>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="meal-planning.html">Meal Planning</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="article-card">
-            <h2>1. Cauliflower for Rice</h2>
-            <p>"Cauliflower rice is a healthier alternative to regular rice as it is significantly lower in calories and carbohydrates, while providing more vitamins, minerals, and fiber, making it an excellent choice for those seeking to reduce their carb intake and boost their nutrient consumption."</p>
-        </div>
+  <main id="main" class="wrapper">
+    <section class="section" aria-labelledby="entrees-heading">
+      <h1 id="entrees-heading">Healthier entree substitutions</h1>
+      <p>Small swaps, big payoff—keep the comfort while adding nutrients, fiber, and balance to your favorite mains.</p>
+    </section>
 
-        <div class="article-card">
-            <h2>2. Zucchini Noodles for Pasta</h2>
-            <p>Swap traditional pasta with spiralized zucchini (zoodles) for a low-calorie, nutrient-rich alternative that adds more vegetables to your meal.</p>
-        </div>
+    <section class="section" aria-labelledby="entree-list-heading">
+      <h2 id="entree-list-heading" class="sr-only">Entree substitution ideas</h2>
 
-        <div class="article-card">
-            <h2>3. Cauliflower Steaks for Meat</h2>
-            <p>Grilled or roasted cauliflower steaks can be a hearty and satisfying vegetarian alternative to meat dishes, loaded with flavor and nutrients.</p>
-        </div>
+      <div class="grid">
+        <article class="card">
+          <h3>1. Cauliflower for rice</h3>
+          <p>Much lower in calories and carbs than white rice, with bonus fiber and micronutrients. Great under stir-fries or curries.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>4. Chickpeas for Ground Meat</h2>
-            <p>Use mashed chickpeas in recipes like tacos or burgers for a protein-packed, plant-based replacement that is both fulfilling and delicious.</p>
-        </div>
+        <article class="card">
+          <h3>2. Zucchini noodles for pasta</h3>
+          <p>Lighten pasta dishes by swapping in zoodles for part or all of the noodles. Toss with marinara or pesto and a protein.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>5. Portobello Mushrooms for Burger Patties</h2>
-            <p>Grilled portobello mushrooms make a great alternative to beef burgers, offering a rich flavor and meaty texture without the added calories.</p>
-        </div>
+        <article class="card">
+          <h3>3. Cauliflower steaks for meat</h3>
+          <p>Roast thick slices with olive oil, garlic, and spices. A hearty, plant-forward center that takes on flavor beautifully.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>6. Sweet Potatoes for Regular Potatoes</h2>
-            <p>Sweet potatoes are higher in vitamins and fiber compared to regular potatoes. Use them in casseroles, fries, or as a mashed side dish.</p>
-        </div>
+        <article class="card">
+          <h3>4. Chickpeas for ground meat</h3>
+          <p>Mash and season for tacos, sloppy joes, or patties. Protein + fiber = filling and budget-friendly.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>7. Greek Yogurt for Sour Cream</h2>
-            <p>Use Greek yogurt as a creamy topping or ingredient in recipes instead of sour cream. It’s lower in fat and higher in protein.</p>
-        </div>
-    </main>
+        <article class="card">
+          <h3>5. Portobellos for burger patties</h3>
+          <p>Grilled portobello caps deliver a meaty texture with fewer calories. Load with your usual burger toppings.</p>
+        </article>
 
-    <footer>
-        <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
-    </footer>
+        <article class="card">
+          <h3>6. Sweet potatoes for white potatoes</h3>
+          <p>More vitamin A and fiber. Use for baked wedges, mash, or as a base for bowls with protein and veggies.</p>
+        </article>
+
+        <article class="card">
+          <h3>7. Greek yogurt for sour cream</h3>
+          <p>Same tangy creaminess, more protein and less fat. Perfect in sauces, dressings, and dolloped on chilis or tacos.</p>
+        </article>
+      </div>
+
+      <p style="margin-top: var(--space-3);">
+        <a class="btn" href="substitutions.html">Back to all substitutions</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+  </footer>
 </body>
 </html>

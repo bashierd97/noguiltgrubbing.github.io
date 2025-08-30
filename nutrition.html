@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition Basics | NGG</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrition Basics | No Guilt Grubbing</title>
+  <meta name="description" content="Nutrition basics made simple—macronutrients, micronutrients, and hydration tips to build balanced, satisfying meals." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="NGG Logo" class="logo-image"> <!-- Logo image -->
-                <span class="logo-text">No Guilt Grubbing</span> <!-- Logo text -->
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="substitutions.html">Substitutions</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <h1>Nutrition Basics</h1>
-        <p>Understanding nutrition is the foundation of a healthy diet. Learn about the essential nutrients your body needs.</p>
+  <header>
+    <div class="header-inner">
+      <nav aria-label="Main">
+        <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
+          <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+          <span class="logo-text">No Guilt Grubbing</span>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="substitutions.html">Substitutions</a></li>
+          <li><a href="nutrition.html" aria-current="page">Nutrition</a></li>
+          <li><a href="meal-planning.html">Meal Planning</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="article-card">
-            <h2>Macronutrients: The Big Three</h2>
-            <h3>Carbohydrates</h3>
-            <p>
-                Carbohydrates are the body's primary energy source. They are divided into simple and complex types. Complex carbohydrates, such as whole grains, fruits, and vegetables, provide sustained energy and are rich in fiber, which supports digestive health. Limit simple sugars and refined grains to maintain stable energy levels.
-            </p>
+  <main id="main" class="wrapper">
+    <section class="section" aria-labelledby="nutrition-heading">
+      <h1 id="nutrition-heading">Nutrition basics</h1>
+      <p>Understanding nutrition is the foundation of a healthy diet. Here are the essentials you need to build balanced, satisfying meals—without overthinking.</p>
+    </section>
 
-            <h3>Proteins</h3>
-            <p>
-               Proteins are essential for building and repairing tissues, supporting immune function, and serving as building blocks for muscles and hormones. Include a variety of protein sources in your diet, such as lean meats, fish, beans, lentils, and nuts, to ensure adequate intake of essential amino acids.
-            </p>
+    <!-- Macronutrients -->
+    <section class="section" aria-labelledby="macros-heading">
+      <h2 id="macros-heading">Macronutrients: the big three</h2>
 
-            <h3>Fats</h3>
-            <p>
-                Fats are important for hormone production, nutrient absorption, and maintaining cell structure. Focus on healthy fats like those found in avocados, nuts, seeds, and olive oil, while minimizing unhealthy trans fats and excessive saturated fats from processed foods. Moderation is key for balanced nutrition.
-            </p>
+      <div class="grid">
+        <article class="card">
+          <h3>Carbohydrates</h3>
+          <p>Primary energy source. Choose complex carbs like whole grains, fruit, and veggies for steady energy and fiber that supports digestion. Limit refined sugars to keep energy stable.</p>
+        </article>
 
-            <h4>By understanding and incorporating these macronutrients into your meal planning, you can promote overall health, support fitness goals, and maintain balanced energy levels throughout the day.</h4>
-        </div>
+        <article class="card">
+          <h3>Proteins</h3>
+          <p>Builds/repairs tissues and supports immunity. Mix lean meats, fish, eggs, beans, lentils, tofu, and nuts to cover essential amino acids and keep you fuller longer.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>Micronutrients: Vitamins and Minerals</h2>
-            <p>These are needed in smaller quantities but are crucial for various bodily functions:</p>
-            <ul>
-                <li><strong>Vitamin C:</strong> Supports immune function (citrus fruits, bell peppers)</li>
-                <li><strong>Calcium:</strong> Important for bone health (dairy, leafy greens)</li>
-                <li><strong>Iron:</strong> Essential for blood health (red meat, beans, spinach)</li>
-                <li><strong>Vitamin D:</strong> Supports bone health and immunity (sunlight, fatty fish)</li>
-            </ul>
-        </div>
+        <article class="card">
+          <h3>Fats</h3>
+          <p>Crucial for hormones, cell health, and absorbing fat-soluble vitamins. Favor unsaturated fats (avocado, olive oil, nuts, seeds) and minimize trans fats and excess saturated fat.</p>
+        </article>
+      </div>
 
-        <div class="article-card">
-            <h2>Hydration: The Forgotten Nutrient</h2>
-            <p>Water is essential for nearly every bodily function. Aim for 8-10 glasses per day, more if you're active.</p>
-            <p>Signs of dehydration include fatigue, headaches, and dark urine.</p>
-        </div>
-    </main>
+      <p style="margin-top: var(--space-2);">Bringing all three together at each meal helps with steady energy, better recovery, and long-term consistency.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
-    </footer>
+    <!-- Micronutrients -->
+    <section class="section" aria-labelledby="micros-heading">
+      <h2 id="micros-heading">Micronutrients: vitamins &amp; minerals</h2>
+      <p>Needed in smaller amounts, but vital for everything from immunity to bone health:</p>
+      <ul>
+        <li><strong>Vitamin C:</strong> Immune support (citrus, bell peppers)</li>
+        <li><strong>Calcium:</strong> Bones/teeth (dairy, fortified milks, leafy greens)</li>
+        <li><strong>Iron:</strong> Oxygen transport (red meat, beans, spinach)</li>
+        <li><strong>Vitamin D:</strong> Bone health &amp; immunity (sunlight, fatty fish, fortified foods)</li>
+      </ul>
+    </section>
+
+    <!-- Hydration -->
+    <section class="section" aria-labelledby="hydration-heading">
+      <h2 id="hydration-heading">Hydration</h2>
+      <p>Water supports temperature regulation, digestion, and cognition. Aim for ~8–10 cups daily (more if active or in heat). Signs you need more: fatigue, headaches, dark urine.</p>
+    </section>
+
+    <section class="section">
+      <a class="btn" href="substitutions.html">Explore healthy substitutions</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+  </footer>
 </body>
 </html>

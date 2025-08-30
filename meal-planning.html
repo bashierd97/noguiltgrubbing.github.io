@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal Planning | NGG</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Planning | No Guilt Grubbing</title>
+  <meta name="description" content="A simple, practical guide to meal planning—clear steps, a shopping list framework, and a sample two-day plan." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="NGG Logo" class="logo-image"> <!-- Logo image -->
-                <span class="logo-text">No Guilt Grubbing</span> <!-- Logo text -->
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="substitutions.html">Substitutions</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <h1>Meal Planning Guide</h1>
-        <p>Effective meal planning can save you time, money, and help you maintain a healthy diet.</p>
+  <header>
+    <div class="header-inner">
+      <nav aria-label="Main">
+        <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
+          <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+          <span class="logo-text">No Guilt Grubbing</span>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="substitutions.html">Substitutions</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="meal-planning.html" aria-current="page">Meal Planning</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="article-card">
-            <h2>Step 1: Set Your Goals</h2>
-            <p>Determine your nutritional needs based on your health goals (weight loss, maintenance, muscle gain, etc.).</p>
-        </div>
+  <main id="main" class="wrapper">
+    <section class="section" aria-labelledby="mp-heading">
+      <h1 id="mp-heading">Meal planning guide</h1>
+      <p>Save time, reduce stress, and eat well consistently. Follow these simple steps and use the sample plan to get started.</p>
+    </section>
 
-        <div class="article-card">
-            <h2>Step 2: Create a Weekly Template</h2>
-            <p>Plan meals that include:</p>
-            <ul>
-                <li>Protein at every meal</li>
-                <li>Vegetables with lunch and dinner</li>
-                <li>Healthy fats in moderation</li>
-                <li>Complex carbohydrates</li>
-            </ul>
-        </div>
+    <!-- Steps -->
+    <section class="section" aria-labelledby="steps-heading">
+      <h2 id="steps-heading">Steps to get organized</h2>
 
-        <div class="article-card">
-            <h2>Step 3: Make a Shopping List</h2>
-            <p>Organize your list by grocery store sections to save time:</p>
-            <ul>
-                <li>Produce</li>
-                <li>Proteins</li>
-                <li>Dry goods</li>
-                <li>Dairy</li>
-                <li>Frozen</li>
-            </ul>
-        </div>
+      <div class="grid">
+        <article class="card">
+          <h3>Step 1: Set your goals</h3>
+          <p>Decide what you’re aiming for (e.g., weight maintenance, strength, more veggies). Keep goals realistic and tied to your week.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>Sample Meal Plan</h2>
-            <h3>Monday</h3>
-            <p>
-                <strong>Breakfast:</strong> Oatmeal with berries and nuts<br>
-                <strong>Lunch:</strong> Grilled chicken salad with mixed greens<br>
-                <strong>Dinner:</strong> Baked salmon with quinoa and roasted vegetables
-            </p>
+        <article class="card">
+          <h3>Step 2: Create a weekly template</h3>
+          <p>Plan meals that include:</p>
+          <ul>
+            <li>Protein at every meal</li>
+            <li>Veggies with lunch &amp; dinner</li>
+            <li>Healthy fats in moderation</li>
+            <li>Complex carbohydrates</li>
+          </ul>
+        </article>
 
-            <h3>Tuesday</h3>
-            <p>
-                <strong>Breakfast:</strong> Greek yogurt with granola and honey<br>
-                <strong>Lunch:</strong> Turkey and avocado wrap with carrot sticks<br>
-                <strong>Dinner:</strong> Stir-fried tofu with brown rice and broccoli
-            </p>
-        </div>
-    </main>
+        <article class="card">
+          <h3>Step 3: Make a shopping list</h3>
+          <p>Organize by store section to move faster:</p>
+          <ul>
+            <li>Produce</li>
+            <li>Proteins</li>
+            <li>Dry goods</li>
+            <li>Dairy</li>
+            <li>Frozen</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
-    </footer>
+    <!-- Sample plan -->
+    <section class="section" aria-labelledby="sample-heading">
+      <h2 id="sample-heading">Sample 2-day meal plan</h2>
+
+      <article class="card">
+        <h3>Monday</h3>
+        <p>
+          <strong>Breakfast:</strong> Oatmeal with berries and nuts<br />
+          <strong>Lunch:</strong> Grilled chicken salad with mixed greens<br />
+          <strong>Dinner:</strong> Baked salmon with quinoa and roasted vegetables
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Tuesday</h3>
+        <p>
+          <strong>Breakfast:</strong> Greek yogurt with granola and honey<br />
+          <strong>Lunch:</strong> Turkey and avocado wrap with carrot sticks<br />
+          <strong>Dinner:</strong> Stir-fried tofu with brown rice and broccoli
+        </p>
+      </article>
+
+      <p style="margin-top: var(--space-3); display:flex; gap:12px; flex-wrap:wrap;">
+        <a class="btn" href="substitutions.html">See easy substitutions</a>
+        <a class="btn" href="nutrition.html">Read nutrition basics</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+  </footer>
 </body>
 </html>

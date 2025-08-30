@@ -1,77 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snack Substitutions | NGG</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snack Substitutions | No Guilt Grubbing</title>
+  <meta name="description" content="Healthier snack substitutions you can make today—simple, satisfying swaps that keep you energized." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="NGG Logo" class="logo-image"> <!-- Logo image -->
-                <span class="logo-text">No Guilt Grubbing</span> <!-- Logo text -->
-            </a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="substitutions.html">Substitutions</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
-                <li><a href="meal-planning.html">Meal Planning</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Accessible skip link -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <h1>Healthier Snack Substitutions</h1>
-        <p>Enjoy your favorite snacks with these nutritious alternatives that keep you satisfied and energized throughout the day.</p>
+  <header>
+    <div class="header-inner">
+      <nav aria-label="Main">
+        <a href="index.html" class="logo" aria-label="No Guilt Grubbing — Home">
+          <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
+          <span class="logo-text">No Guilt Grubbing</span>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="meal-planning.html">Meal Planning</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <div class="article-card">
-            <h2>1. Veggie Sticks for Chips</h2>
-            <img src="images/veggie-sticks.jpg" alt="Veggie Sticks" class="article-image">
-            <p>Replace potato chips with crunchy veggie sticks like carrots, cucumbers, and bell peppers for a low-calorie snack.</p>
-        </div>
+  <main id="main" class="wrapper">
+    <section class="section" aria-labelledby="snacks-heading">
+      <h1 id="snacks-heading">Healthier snack substitutions</h1>
+      <p>Enjoy your favorites with simple, tasty swaps that keep you satisfied and energized between meals.</p>
+    </section>
 
-        <div class="article-card">
-            <h2>2. Almonds for Candy</h2>
-            <img src="images/almonds.jpg" alt="Almonds" class="article-image">
-            <p>Choose a handful of almonds instead of sugary candies for a sweet treat packed with healthy fats and protein.</p>
-        </div>
+    <section class="section" aria-labelledby="snack-list-heading">
+      <h2 id="snack-list-heading" class="sr-only">Snack substitution ideas</h2>
 
-        <div class="article-card">
-            <h2>3. Greek Yogurt for Ice Cream</h2>
-            <img src="images/greek-yogurt.jpg" alt="Greek Yogurt" class="article-image">
-            <p>Swap ice cream for Greek yogurt topped with fresh fruit and a drizzle of honey for a creamy, satisfying dessert.</p>
-        </div>
+      <div class="grid">
+        <article class="card">
+          <img src="images/veggie-sticks.jpg" alt="Carrot, cucumber, and bell pepper sticks" class="article-image" />
+          <h3>1. Veggie sticks for chips</h3>
+          <p>Crunch without the crash—carrots, cucumbers, and peppers with a pinch of salt or a squeeze of lemon.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>4. Popcorn for Pretzels</h2>
-            <img src="images/popcorn.jpg" alt="Popcorn" class="article-image">
-            <p>Air-popped popcorn is a great low-calorie alternative to pretzels, providing fiber and a satisfying crunch.</p>
-        </div>
+        <article class="card">
+          <img src="images/almonds.jpg" alt="Almonds in a small bowl" class="article-image" />
+          <h3>2. Almonds for candy</h3>
+          <p>Sweet and satisfying—healthy fats + protein help curb cravings and keep you fuller longer.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>5. Rice Cakes for Crackers</h2>
-            <img src="images/rice-cakes.jpg" alt="Rice Cakes" class="article-image">
-            <p>Use whole grain rice cakes instead of traditional crackers to reduce calories while enjoying your favorite toppings.</p>
-        </div>
+        <article class="card">
+          <img src="images/greek-yogurt.jpg" alt="Greek yogurt topped with berries" class="article-image" />
+          <h3>3. Greek yogurt for ice cream</h3>
+          <p>Creamy and protein-packed—add fruit and a drizzle of honey for dessert vibes.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>6. Hummus for Dips</h2>
-            <img src="images/hummus.jpg" alt="Hummus" class="article-image">
-            <p>Dip fresh veggies in hummus instead of creamy dips for a nutritious, protein-packed snack.</p>
-        </div>
+        <article class="card">
+          <img src="images/popcorn.jpg" alt="Air-popped popcorn in a bowl" class="article-image" />
+          <h3>4. Popcorn for pretzels</h3>
+          <p>Air-popped popcorn delivers volume and fiber for fewer calories—season to taste.</p>
+        </article>
 
-        <div class="article-card">
-            <h2>7. Fruit for Granola Bars</h2>
-            <img src="images/fresh-fruit.jpg" alt="Fresh Fruit" class="article-image">
-            <p>Opt for fresh fruit instead of granola bars for a naturally sweet snack full of vitamins and fiber.</p>
-        </div>
-    </main>
+        <article class="card">
+          <img src="images/rice-cakes.jpg" alt="Whole grain rice cakes with toppings" class="article-image" />
+          <h3>5. Rice cakes for crackers</h3>
+          <p>Whole-grain rice cakes with nut butter, cottage cheese, or avocado keep things light but satisfying.</p>
+        </article>
 
-    <footer>
-        <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
-    </footer>
+        <article class="card">
+          <img src="images/hummus.jpg" alt="Hummus served with sliced veggies" class="article-image" />
+          <h3>6. Hummus for creamy dips</h3>
+          <p>Protein-rich and flavorful—pair with veggie sticks or whole-grain pita.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/fresh-fruit.jpg" alt="Assorted fresh fruit" class="article-image" />
+          <h3>7. Fruit for granola bars</h3>
+          <p>Naturally sweet with fiber and micronutrients—add nuts for staying power.</p>
+        </article>
+      </div>
+
+      <p style="margin-top: var(--space-3);">
+        <a class="btn" href="substitutions.html">Back to all substitutions</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+  </footer>
 </body>
 </html>
