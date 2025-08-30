@@ -85,7 +85,7 @@ nav {
     color: #fff;
     gap: 8px;
 }
-/*.logo:hover { color: #fff; }*/
+.logo:hover { color: #fff; }
 .logo-image {
     height: 72px; width: auto; margin-right: 0.25rem;
 }
