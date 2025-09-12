@@ -30,15 +30,76 @@
     </div>
   </header>
 
+  <!-- Hero -->
+  <section class="hero" role="banner" aria-label="Meal planning">
+    <div class="wrapper">
+      <div class="hero-content">
+        <h1>Meal planning</h1>
+        <p>Save time, reduce stress, and eat well consistently. Start with a simple weekly template, shop smart, and prep once for multiple meals.</p>
+        <a class="btn" href="#topics">Explore topics</a>
+      </div>
+    </div>
+  </section>
+
   <main id="main" class="wrapper">
-    <section class="section" aria-labelledby="mp-heading">
-      <h1 id="mp-heading">Meal planning guide</h1>
-      <p>Save time, reduce stress, and eat well consistently. Follow these simple steps and use the sample plan to get started.</p>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li aria-current="page">Meal Planning</li>
+      </ol>
+    </nav>
+
+    <!-- Topic cards -->
+    <section class="section" id="topics" aria-labelledby="topics-heading">
+      <h2 id="topics-heading" class="sr-only">Meal planning topics</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Weekly template</h3>
+          <ul>
+            <li>Pick 2 breakfasts, 2 lunches, 3 dinners</li>
+            <li>Protein + veg + smart carbs + fats</li>
+            <li>Repeat through the week</li>
+          </ul>
+          <p><a href="#template" class="btn">Build a template</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Smart shopping</h3>
+          <ul>
+            <li>List by aisle: produce → proteins → dry</li>
+            <li>Buy versatile base items</li>
+            <li>Check pantry before you go</li>
+          </ul>
+          <p><a href="#shopping" class="btn">Plan your list</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Prep &amp; batch</h3>
+          <ul>
+            <li>Cook once, eat 2–3 times</li>
+            <li>Pre-chop veg &amp; pre-cook grains</li>
+            <li>Use sheet-pan + skillet combos</li>
+          </ul>
+          <p><a href="#prep" class="btn">Prep workflow</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Sample plan</h3>
+          <ul>
+            <li>Two days you can copy/paste</li>
+            <li>Protein at every meal</li>
+            <li>Veggies at lunch &amp; dinner</li>
+          </ul>
+          <p><a href="#sample" class="btn">See example</a></p>
+        </article>
+      </div>
     </section>
 
-    <!-- Steps -->
-    <section class="section" aria-labelledby="steps-heading">
-      <h2 id="steps-heading">Steps to get organized</h2>
+    <!-- Weekly template -->
+    <section class="section" id="template" aria-labelledby="template-heading">
+      <h2 id="template-heading">Create a weekly template</h2>
 
       <div class="grid">
         <article class="card">
@@ -47,7 +108,7 @@
         </article>
 
         <article class="card">
-          <h3>Step 2: Create a weekly template</h3>
+          <h3>Step 2: Choose meal anchors</h3>
           <p>Plan meals that include:</p>
           <ul>
             <li>Protein at every meal</li>
@@ -58,21 +119,64 @@
         </article>
 
         <article class="card">
-          <h3>Step 3: Make a shopping list</h3>
-          <p>Organize by store section to move faster:</p>
+          <h3>Step 3: Make a simple rotation</h3>
+          <p>Pick 2 breakfasts, 2 lunches, and 3 dinners that you actually enjoy. Rotate them Mon–Fri to reduce decisions and waste.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Shopping list -->
+    <section class="section" id="shopping" aria-labelledby="shopping-heading">
+      <h2 id="shopping-heading">Make a shopping list (by aisle)</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Sections to use</h3>
           <ul>
             <li>Produce</li>
-            <li>Proteins</li>
+            <li>Proteins (meat/eggs/plant)</li>
             <li>Dry goods</li>
-            <li>Dairy</li>
+            <li>Dairy/alternatives</li>
             <li>Frozen</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Pro tips</h3>
+          <ul>
+            <li>Check pantry/freezer first</li>
+            <li>Buy versatile bases (rice, quinoa, greens)</li>
+            <li>Plan for leftovers as a future meal</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Prep & batch -->
+    <section class="section" id="prep" aria-labelledby="prep-heading">
+      <h2 id="prep-heading">Prep &amp; batch workflow</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Quick prep wins</h3>
+          <ul>
+            <li>Pre-chop onions/peppers/carrots</li>
+            <li>Cook a pot of grains for the week</li>
+            <li>Roast a tray of mixed veggies</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Batch protein</h3>
+          <ul>
+            <li>Grill/bake chicken or tofu</li>
+            <li>Brown turkey with taco seasoning</li>
+            <li>Slow-cook beans or lentils</li>
           </ul>
         </article>
       </div>
     </section>
 
     <!-- Sample plan -->
-    <section class="section" aria-labelledby="sample-heading">
+    <section class="section" id="sample" aria-labelledby="sample-heading">
       <h2 id="sample-heading">Sample 2-day meal plan</h2>
 
       <article class="card">
