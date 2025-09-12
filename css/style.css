@@ -395,4 +395,50 @@ nav a:hover { background-color: rgba(255,255,255,.12); color: #fff; }
 .breadcrumb a:hover { text-decoration: underline; color: var(--text); }
 .breadcrumb [aria-current="page"] { color: var(--text); font-weight: 600; }
 
-  
+/* ===== Breakfast page polish ===== */
+.swap .swap-head {
+  display: flex; align-items: center; gap: 12px;
+}
+.swap-icon {
+  width: 36px; height: 36px; display: grid; place-items: center;
+  font-size: 22px; border-radius: 9999px;
+  background: rgba(150, 47, 191, .10); /* brand-tinted bubble */
+  border: 1px solid rgba(150, 47, 191, .18);
+}
+
+/* Badges (Protein+, Lower sugar, etc.) */
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 8px; }
+.badge {
+  font-size: 12px; font-weight: 600; letter-spacing: .2px;
+  padding: 4px 8px; border-radius: 9999px;
+  background: rgba(214, 41, 118, .10);
+  border: 1px solid rgba(214, 41, 118, .18);
+  color: #5A1941;
+}
+
+/* Collapse long text into clean summaries */
+details {
+  border-top: 1px solid var(--border);
+  margin-top: 8px; padding-top: 8px;
+}
+details summary {
+  cursor: pointer; font-weight: 700; color: var(--primary);
+  list-style: none;  /* hide default marker */
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::after {
+  content: "▾"; margin-left: 8px; font-size: 12px; opacity: .7;
+}
+details[open] summary::after { transform: rotate(180deg); display: inline-block; }
+
+/* Tiny list for ideas inside details */
+.mini-list { margin: 8px 0 0 18px; }
+
+/* Highlighted tip card */
+.card.tip {
+  background: linear-gradient(180deg, rgba(214,41,118,.06), rgba(150,47,191,.04));
+  border: 1px solid rgba(150,47,191,.18);
+}
+
+/* Slightly tighten grid on this page so cards feel connected */
+#breakfast-list .grid { gap: var(--space-2); }  
