@@ -441,4 +441,45 @@ details[open] summary::after { transform: rotate(180deg); display: inline-block;
 }
 
 /* Slightly tighten grid on this page so cards feel connected */
-#breakfast-list .grid { gap: var(--space-2); }  
+#breakfast-list .grid { gap: var(--space-2); }
+
+/* ===== Softer badges + variants ===== */
+.badges { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 8px; }
+
+.badge {
+  font-size: 12px; font-weight: 600; letter-spacing: .2px;
+  padding: 4px 8px; border-radius: 9999px;
+  background: rgba(214, 41, 118, .08);             /* lighter */
+  border: 1px solid rgba(214, 41, 118, .16);
+  color: #6e4060;                                   /* softer text */
+}
+
+/* Optional, nicer per-trait tints */
+.badge--protein     { background: rgba(139,195,74,.12);  border-color: rgba(139,195,74,.24);  color: #355d1f; }
+.badge--fiber       { background: rgba(3,169,244,.10);   border-color: rgba(3,169,244,.22);   color: #1e4e73; }
+.badge--vitamins    { background: rgba(76,175,80,.12);   border-color: rgba(76,175,80,.22);   color: #2f6a33; }
+.badge--omega       { background: rgba(255,160,0,.12);   border-color: rgba(255,160,0,.22);   color: #7a5200; }
+.badge--lower-sugar { background: rgba(156,39,176,.10);  border-color: rgba(156,39,176,.22);  color: #5a2d6a; }
+.badge--lower-carb  { background: rgba(121,85,72,.10);   border-color: rgba(121,85,72,.22);   color: #4e3a33; }
+.badge--healthy-fats{ background: rgba(255,160,0,.10);   border-color: rgba(255,160,0,.22);   color: #7a5200; }
+
+/* Dark mode tuning */
+@media (prefers-color-scheme: dark) {
+  .badge { background: rgba(214,41,118,.18); border-color: rgba(214,41,118,.32); color: #f2e9f1; }
+  .badge--protein     { background: rgba(139,195,74,.22);  border-color: rgba(139,195,74,.36);  color: #eef7ea; }
+  .badge--fiber       { background: rgba(3,169,244,.22);   border-color: rgba(3,169,244,.36);   color: #e9f5fc; }
+  .badge--vitamins    { background: rgba(76,175,80,.22);   border-color: rgba(76,175,80,.36);   color: #ecf7ee; }
+  .badge--omega       { background: rgba(255,160,0,.22);   border-color: rgba(255,160,0,.36);   color: #fff6e6; }
+  .badge--lower-sugar { background: rgba(156,39,176,.22);  border-color: rgba(156,39,176,.36);  color: #f7eefd; }
+  .badge--lower-carb  { background: rgba(121,85,72,.22);   border-color: rgba(121,85,72,.36);   color: #f1e9e6; }
+  .badge--healthy-fats{ background: rgba(255,160,0,.22);   border-color: rgba(255,160,0,.36);   color: #fff6e6; }
+}
+
+/* Tiny images used on some swaps */
+.swap-img {
+  width: 100%; height: auto;
+  aspect-ratio: 4 / 3; object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 10px;
+}
