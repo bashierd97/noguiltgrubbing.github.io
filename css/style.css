@@ -324,8 +324,18 @@ footer p { color: #fff; }
     main { padding: var(--space-2); }
 }
 @media (max-width: 768px) {
-    nav { flex-direction: column; text-align: center; }
-    nav ul { margin-top: var(--space-1); flex-direction: column; gap: 6px; }
+    nav { flex-wrap: wrap; align-items: center; }
+    .nav-toggle { display: flex; }
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 8px;
+        gap: 4px;
+    }
+    #nav-menu.is-open { display: flex; }
+    #nav-menu li { margin: 0; }
+    #nav-menu a { display: block; padding: 10px 14px; }
     .hero { height: 60vh; }
     .hero-content { padding: var(--space-2); }
     .hero-ctas { flex-direction: column; align-items: flex-start; }
@@ -520,4 +530,167 @@ details[open] summary::after { transform: rotate(180deg); display: inline-block;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   margin-bottom: 10px;
+}
+
+/* =========================
+   HAMBURGER NAV
+   ========================= */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    flex-shrink: 0;
+}
+.nav-toggle span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* =========================
+   SCROLL ANIMATIONS
+   ========================= */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    .fade-in { opacity: 1; transform: none; transition: none; }
+}
+
+/* =========================
+   BACK TO TOP
+   ========================= */
+.back-to-top {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 44px;
+    height: 44px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 44px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s, background-color 0.2s;
+    z-index: 200;
+}
+.back-to-top.visible {
+    opacity: 1;
+    transform: none;
+}
+.back-to-top:hover {
+    background: #7a22a0;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   STATS ROW (About page)
+   ========================= */
+.stats-row {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: var(--space-3) 0;
+    padding: var(--space-3) var(--space-2);
+    background: linear-gradient(135deg, rgba(150, 47, 191, .07), rgba(214, 41, 118, .05));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 100px;
+}
+.stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+.stat-label {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 6px;
+    max-width: 120px;
+}
+
+/* =========================
+   PAGE SUBNAV (long pages)
+   ========================= */
+.page-subnav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    background: var(--surface);
+    border-bottom: 2px solid var(--border);
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin: 0 0 var(--space-3);
+}
+.page-subnav::-webkit-scrollbar { display: none; }
+.page-subnav a {
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.2s, border-color 0.2s;
+    border-radius: 0;
+    background: none;
+}
+.page-subnav a:hover {
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+    background: none;
+    transform: none;
+}
+
+/* =========================
+   SWAP KEY (Substitutions page)
+   ========================= */
+.swap-key {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: var(--space-2);
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }

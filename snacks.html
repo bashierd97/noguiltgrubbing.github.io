@@ -7,6 +7,7 @@
   <meta name="description" content="Healthier snack substitutions you can make today—simple, satisfying swaps that keep you energized." />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -19,7 +20,10 @@
           <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
           <span class="logo-text">No Guilt Grubbing</span>
         </a>
-        <ul>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
           <li><a href="nutrition.html">Nutrition</a></li>
@@ -90,7 +94,8 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+    <p>&copy; 2026 No Guilt Grubbing. All rights reserved.</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

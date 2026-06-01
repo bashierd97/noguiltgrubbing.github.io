@@ -7,6 +7,7 @@
   <meta name="description" content="Easy, tasty food swaps for breakfast, entrees, desserts, and snacks—balanced choices you can make this week." />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -19,7 +20,10 @@
           <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
           <span class="logo-text">No Guilt Grubbing</span>
         </a>
-        <ul>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="substitutions.html" aria-current="page">Substitutions</a></li>
           <li><a href="nutrition.html">Nutrition</a></li>
@@ -53,6 +57,7 @@
     <!-- Card grid -->
     <section class="section" id="categories" aria-labelledby="categories-heading">
       <h2 id="categories-heading" class="sr-only">Substitution categories</h2>
+      <p class="swap-key">Each swap reads: <strong>original → healthier alternative</strong></p>
 
       <div class="grid">
         <article class="card" role="article">
@@ -63,9 +68,9 @@
             loading="lazy" width="800" height="600" />
           <h3>Breakfast swaps</h3>
           <ul>
-            <li>Greek yogurt → sour cream</li>
-            <li>Keto-friendly toast → white bread</li>
-            <li>Chia pudding → sugary yogurt</li>
+            <li>Sour cream → Greek yogurt</li>
+            <li>White bread → keto-friendly toast</li>
+            <li>Sugary yogurt → chia pudding</li>
           </ul>
           <p><a href="breakfast.html" class="btn">Explore breakfast</a></p>
         </article>
@@ -78,9 +83,9 @@
             loading="lazy" width="800" height="600" />
           <h3>Entree swaps</h3>
           <ul>
-            <li>Cauliflower rice → white rice</li>
-            <li>Zucchini noodles → pasta</li>
-            <li>Chickpeas → ground meat</li>
+            <li>White rice → cauliflower rice</li>
+            <li>Pasta → zucchini noodles</li>
+            <li>Ground meat → chickpeas</li>
           </ul>
           <p><a href="entrees.html" class="btn">Explore entrees</a></p>
         </article>
@@ -93,9 +98,9 @@
             loading="lazy" width="800" height="600" />
           <h3>Dessert swaps</h3>
           <ul>
-            <li>Avocado mousse → heavy cream mousse</li>
-            <li>Banana “nice” cream → ice cream</li>
-            <li>Chia pudding → custard</li>
+            <li>Heavy cream mousse → avocado mousse</li>
+            <li>Ice cream → banana “nice” cream</li>
+            <li>Custard → chia pudding</li>
           </ul>
           <p><a href="desserts.html" class="btn">Explore desserts</a></p>
         </article>
@@ -108,9 +113,9 @@
             loading="lazy" width="800" height="600" />
           <h3>Snack swaps</h3>
           <ul>
-            <li>Veggie sticks → chips</li>
-            <li>Almonds → candy</li>
-            <li>Air-popped popcorn → pretzels</li>
+            <li>Chips → veggie sticks</li>
+            <li>Candy → almonds</li>
+            <li>Pretzels → air-popped popcorn</li>
           </ul>
           <p><a href="snacks.html" class="btn">Explore snacks</a></p>
         </article>
@@ -119,7 +124,8 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+    <p>&copy; 2026 No Guilt Grubbing. All rights reserved.</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

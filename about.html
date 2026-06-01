@@ -7,6 +7,7 @@
   <meta name="description" content="The story and mission behind No Guilt Grubbing: practical, tasty substitutions and sustainable habits—no guilt, just good food." />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -19,7 +20,10 @@
           <img src="images/logo.png" alt="No Guilt Grubbing logo" class="logo-image" />
           <span class="logo-text">No Guilt Grubbing</span>
         </a>
-        <ul>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="substitutions.html">Substitutions</a></li>
           <li><a href="nutrition.html">Nutrition</a></li>
@@ -60,6 +64,20 @@
     <section class="section" id="story" aria-labelledby="story-heading">
       <article class="card">
         <h2 id="story-heading">Our story</h2>
+        <div class="stats-row">
+          <div class="stat">
+            <span class="stat-num">70 lbs</span>
+            <span class="stat-label">gained during pandemic</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">50 lbs</span>
+            <span class="stat-label">lost in 3 months</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2+ yrs</span>
+            <span class="stat-label">maintaining &amp; building muscle</span>
+          </div>
+        </div>
         <p>My weight journey changed during the pandemic: I gained 70 pounds in 3–4 months and carried that weight for two years. When I finally committed to changing my habits, I lost 50 pounds in three months and have maintained while building muscle. That process taught me resilience, self-care, and how powerful small, consistent choices can be.</p>
         <p>I want to help others feel the same momentum. One of the biggest <strong>obstacles</strong> to weight loss is the belief that it requires extreme <strong>commitment</strong> and total <strong>sacrifice</strong>—especially giving up foods you love. We’re here to prove that healthy can be just as delicious (often more!) with a few smart tweaks.</p>
       </article>
@@ -87,7 +105,8 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 No Guilt Grubbing. All rights reserved.</p>
+    <p>&copy; 2026 No Guilt Grubbing. All rights reserved.</p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
