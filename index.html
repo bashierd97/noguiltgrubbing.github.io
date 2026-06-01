@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>No Guilt Grubbing</title>
     <meta name="description" content="Simple, delicious food swaps, balanced nutrition basics, and weekly meal planning that fits real life." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://noguiltgrubbing.github.io/" />
+    <meta property="og:title" content="No Guilt Grubbing" />
+    <meta property="og:description" content="Simple, delicious food swaps, balanced nutrition basics, and weekly meal planning that fits real life." />
+    <meta property="og:image" content="https://noguiltgrubbing.github.io/images/hero-bg.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="images/hero-bg.jpg" as="image" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="images/logo.png" type="image/png" />
@@ -30,6 +39,7 @@
                     <li><a href="meal-planning.html">Meal Planning</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
+                <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
             </nav>
         </div>
     </header>
@@ -61,28 +71,50 @@
             <h2 id="features-heading" class="sr-only">Featured sections</h2>
             <div class="grid">
                 <article class="card">
+                    <span class="card-icon" aria-hidden="true">🥗</span>
                     <h3>Balanced Nutrition</h3>
                     <p>Macros made simple—learn how to build satisfying, balanced plates without overthinking.</p>
                     <a href="nutrition.html" class="btn">Read basics</a>
                 </article>
 
                 <article class="card">
+                    <span class="card-icon" aria-hidden="true">🔄</span>
                     <h3>Healthy Substitutions</h3>
                     <p>Easy swaps you can make this week (e.g., Greek yogurt for sour cream, cauliflower rice for white rice).</p>
                     <a href="substitutions.html" class="btn">See swaps</a>
                 </article>
 
                 <article class="card">
+                    <span class="card-icon" aria-hidden="true">📅</span>
                     <h3>Meal Planning</h3>
                     <p>Templates, grocery lists, and two sample weeks to save time and eat well—consistently.</p>
                     <a href="meal-planning.html" class="btn">Start planning</a>
                 </article>
             </div>
         </section>
+
+        <!-- Try this today callout -->
+        <div class="featured-swap" role="note">
+            <span class="featured-swap-icon" aria-hidden="true">💡</span>
+            <div>
+                <span class="featured-swap-label">Try this today</span>
+                <p class="featured-swap-text">Swap sour cream for Greek yogurt — same creaminess, 3× the protein, and it works in dips, tacos, baked potatoes, and more.</p>
+                <a href="breakfast.html" class="btn">See breakfast swaps</a>
+            </div>
+        </div>
     </main>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 No Guilt Grubbing. All rights reserved.</p>
+    <footer>
+        <div class="footer-inner">
+            <p class="footer-copy">&copy; 2026 No Guilt Grubbing. All rights reserved.</p>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="substitutions.html">Substitutions</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="meal-planning.html">Meal Planning</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
