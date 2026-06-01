@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#962FBF" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Snack Substitutions","url":"https://noguiltgrubbing.github.io/snacks.html","description":"Healthier snack swaps you can make today—satisfying and energizing."}</script>
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -44,57 +47,234 @@
   </header>
 
   <main id="main" class="wrapper">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="substitutions.html">Substitutions</a></li>
+        <li aria-current="page">Snacks</li>
+      </ol>
+    </nav>
+
     <section class="section" aria-labelledby="snacks-heading">
       <h1 id="snacks-heading">Healthier snack substitutions</h1>
-      <p>Enjoy your favorites with simple, tasty swaps that keep you satisfied and energized between meals.</p>
+      <p>The right snack holds you over without a crash. These swaps hit the same craving with more protein, fiber, and staying power.</p>
     </section>
 
-    <section class="section" aria-labelledby="snack-list-heading">
+    <section class="section" id="snack-list" aria-labelledby="snack-list-heading">
       <h2 id="snack-list-heading" class="sr-only">Snack substitution ideas</h2>
-
       <div class="grid">
-        <article class="card">
-          <img src="images/veggie-sticks.jpg" alt="Carrot, cucumber, and bell pepper sticks" class="article-image" />
-          <h3>1. Veggie sticks for chips</h3>
-          <p>Crunch without the crash—carrots, cucumbers, and peppers with a pinch of salt or a squeeze of lemon.</p>
+
+        <article class="card swap">
+          <img src="images/veggie-sticks.jpg" alt="Carrot, cucumber, and bell pepper sticks with hummus" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥕</span>
+            <h3>Veggie sticks for chips</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--fiber">Fiber+</span>
+            <span class="badge badge--vitamins">Vitamins</span>
+            <span class="badge badge--lower-carb">Lower carbs</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Same satisfying crunch with vitamins, fiber, and water content instead of refined starch and seed oils. Pre-cut a batch Sunday and they're grab-and-go all week.</p>
+            <ul class="mini-list">
+              <li>Carrots + hummus or guacamole</li>
+              <li>Cucumber slices + everything bagel seasoning + Greek yogurt dip</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <img src="images/almonds.jpg" alt="Almonds in a small bowl" class="article-image" />
-          <h3>2. Almonds for candy</h3>
-          <p>Sweet and satisfying—healthy fats + protein help curb cravings and keep you fuller longer.</p>
+        <article class="card swap">
+          <img src="images/almonds.jpg" alt="Almonds and mixed nuts in a small bowl" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥜</span>
+            <h3>Mixed nuts for candy</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--healthy-fats">Healthy fats</span>
+            <span class="badge badge--protein">Protein+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>A small handful of almonds, cashews, or walnuts delivers filling fats and protein that prevent the blood sugar spike-and-crash cycle that candy triggers. 1oz is enough.</p>
+            <ul class="mini-list">
+              <li>Trail mix: almonds + dark chocolate chips + dried cranberries</li>
+              <li>Walnuts + a few dates for a natural sweet-and-salty combo</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <img src="images/greek-yogurt.jpg" alt="Greek yogurt topped with berries" class="article-image" />
-          <h3>3. Greek yogurt for ice cream</h3>
-          <p>Creamy and protein-packed—add fruit and a drizzle of honey for dessert vibes.</p>
+        <article class="card swap">
+          <img src="images/greek-yogurt.jpg" alt="Greek yogurt topped with fresh berries" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥣</span>
+            <h3>Greek yogurt for ice cream (snack)</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--lower-sugar">Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Greek yogurt has ~17g protein per cup vs. near zero in ice cream. Freeze for 30 minutes for a thicker, ice-cream-adjacent texture. Top with something crunchy for textural contrast.</p>
+            <ul class="mini-list">
+              <li>Frozen yogurt cup + berries + granola</li>
+              <li>Yogurt + honey + crushed walnuts as a quick parfait</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <img src="images/popcorn.jpg" alt="Air-popped popcorn in a bowl" class="article-image" />
-          <h3>4. Popcorn for pretzels</h3>
-          <p>Air-popped popcorn delivers volume and fiber for fewer calories—season to taste.</p>
+        <article class="card swap">
+          <img src="images/popcorn.jpg" alt="Air-popped popcorn in a bowl" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🍿</span>
+            <h3>Air-popped popcorn for chips or pretzels</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--fiber">Fiber+</span>
+            <span class="badge badge--lower-carb">Lower calories</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Whole grain, high-volume snack at ~100 calories for 3 cups. The fiber and volume signal fullness much faster than the same calories from chips or pretzels.</p>
+            <ul class="mini-list">
+              <li>Nutritional yeast + garlic powder for "cheesy" popcorn</li>
+              <li>Cinnamon + coconut sugar for a sweet version</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <img src="images/rice-cakes.jpg" alt="Whole grain rice cakes with toppings" class="article-image" />
-          <h3>5. Rice cakes for crackers</h3>
-          <p>Whole-grain rice cakes with nut butter, cottage cheese, or avocado keep things light but satisfying.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🫘</span>
+            <h3>Edamame for chips or crackers</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--fiber">Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>One cup of edamame has 17g protein and 8g fiber — almost no snack food competes for satiety per calorie. Frozen edamame takes 5 minutes to prepare.</p>
+            <ul class="mini-list">
+              <li>Salted edamame pods — simple and satisfying</li>
+              <li>Shelled edamame with chili flakes, lime, and a pinch of sea salt</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <img src="images/hummus.jpg" alt="Hummus served with sliced veggies" class="article-image" />
-          <h3>6. Hummus for creamy dips</h3>
-          <p>Protein-rich and flavorful—pair with veggie sticks or whole-grain pita.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🍫</span>
+            <h3>Dark chocolate (70%+) for milk chocolate</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-sugar">Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Higher cacao content means more flavonoid antioxidants and significantly less sugar per serving. The more intense flavor also means 1–2 squares genuinely satisfies the craving that would otherwise require a full bar.</p>
+            <ul class="mini-list">
+              <li>2 squares of 85% dark chocolate with a handful of almonds</li>
+              <li>Dark chocolate-dipped strawberries</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <img src="images/fresh-fruit.jpg" alt="Assorted fresh fruit" class="article-image" />
-          <h3>7. Fruit for granola bars</h3>
-          <p>Naturally sweet with fiber and micronutrients—add nuts for staying power.</p>
+        <article class="card swap">
+          <img src="images/rice-cakes.jpg" alt="Whole grain rice cakes with almond butter and banana" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🫓</span>
+            <h3>Rice cakes for crackers</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-carb">Lower carbs</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Light, crisp, and versatile — use as a base for any cracker topping with a fraction of the refined carbs and sodium. Goes with both sweet and savory.</p>
+            <ul class="mini-list">
+              <li>Nut butter + banana slices + chia seeds</li>
+              <li>Cottage cheese + cucumber + everything seasoning</li>
+            </ul>
+          </details>
         </article>
+
+        <article class="card swap">
+          <img src="images/hummus.jpg" alt="Hummus with olive oil and paprika served with veggies" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🫙</span>
+            <h3>Hummus for creamy dips (ranch, onion)</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--fiber">Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Chickpeas and tahini provide protein, fiber, and healthy fats. Far more nutritious than sour cream-based dips, and comes in endless flavors (roasted red pepper, garlic, beet).</p>
+            <ul class="mini-list">
+              <li>Hummus with a full veggie platter — carrots, celery, peppers, cucumber</li>
+              <li>Spread on rice cakes as a quick snack</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🧀</span>
+            <h3>Cottage cheese for cream cheese or heavy dips</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--lower-fat">Lower fat</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Blend cottage cheese until completely smooth for a creamy, high-protein alternative. One cup delivers ~25g protein. Works as a savory dip, sweet bowl, or spread.</p>
+            <ul class="mini-list">
+              <li>Blended cottage cheese + chives + lemon as a veggie dip</li>
+              <li>Cottage cheese + berries + honey + granola as a sweet snack bowl</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="card swap">
+          <img src="images/fresh-fruit.jpg" alt="Apple slices with almond butter" class="swap-img" loading="lazy" width="800" height="600" />
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🍏</span>
+            <h3>Fruit + nut butter for granola bars</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--vitamins">Vitamins</span>
+            <span class="badge badge--healthy-fats">Healthy fats</span>
+            <span class="badge badge--lower-sugar">Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Most granola bars are glorified candy bars — 20–30g of added sugar, minimal protein. Natural fruit gives fiber and vitamins; nut butter adds fats and protein for sustained energy.</p>
+            <ul class="mini-list">
+              <li>Apple slices + 1 tbsp almond or peanut butter</li>
+              <li>Banana + peanut butter + a sprinkle of chia seeds</li>
+            </ul>
+          </details>
+        </article>
+
       </div>
+
+      <article class="card tip" style="margin-top: var(--space-3);">
+        <h3>Build a snack station</h3>
+        <p>Set up a small tray in your fridge at the start of each week so healthy snacks are the easy choice:</p>
+        <ul class="mini-list">
+          <li>Pre-washed veggie sticks in a container with hummus</li>
+          <li>Greek yogurt cups with a bag of mixed berries nearby</li>
+          <li>A jar of mixed nuts portioned into a small bowl</li>
+        </ul>
+        <p style="margin-top: 12px;">
+          <a class="btn" href="meal-planning.html">Plan your snacks for the week</a>
+        </p>
+      </article>
 
       <p style="margin-top: var(--space-3);">
         <a class="btn" href="substitutions.html">Back to all substitutions</a>
@@ -111,6 +291,7 @@
         <li><a href="nutrition.html">Nutrition</a></li>
         <li><a href="meal-planning.html">Meal Planning</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
   </footer>

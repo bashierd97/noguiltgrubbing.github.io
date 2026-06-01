@@ -550,6 +550,7 @@ details[open] summary::after { transform: rotate(180deg); display: inline-block;
 .badge--lower-sugar { background: rgba(156,39,176,.10);  border-color: rgba(156,39,176,.22);  color: #5a2d6a; }
 .badge--lower-carb  { background: rgba(121,85,72,.10);   border-color: rgba(121,85,72,.22);   color: #4e3a33; }
 .badge--healthy-fats{ background: rgba(255,160,0,.10);   border-color: rgba(255,160,0,.22);   color: #7a5200; }
+.badge--lower-fat   { background: rgba(3,169,244,.10);   border-color: rgba(3,169,244,.22);   color: #1e4e73; }
 
 /* Dark mode tuning */
 @media (prefers-color-scheme: dark) {
@@ -561,6 +562,7 @@ details[open] summary::after { transform: rotate(180deg); display: inline-block;
   .badge--lower-sugar { background: rgba(156,39,176,.22);  border-color: rgba(156,39,176,.36);  color: #f7eefd; }
   .badge--lower-carb  { background: rgba(121,85,72,.22);   border-color: rgba(121,85,72,.36);   color: #f1e9e6; }
   .badge--healthy-fats{ background: rgba(255,160,0,.22);   border-color: rgba(255,160,0,.36);   color: #fff6e6; }
+  .badge--lower-fat   { background: rgba(3,169,244,.22);   border-color: rgba(3,169,244,.36);   color: #e9f5fc; }
 }
 
 /* Tiny images used on some swaps */
@@ -878,4 +880,154 @@ html.light-mode.theme-tint .btn { box-shadow: 0 2px 8px rgba(214,41,118,.25); }
     .card { break-inside: avoid; border: 1px solid #ccc; box-shadow: none; }
     h1, h2, h3 { color: #000; }
     a[href]::after { content: none; }
+}
+
+/* =========================
+   FOCUS VISIBLE
+   ========================= */
+:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+:focus:not(:focus-visible) { outline: none; }
+
+/* =========================
+   SCROLL MARGIN (sticky nav offset)
+   ========================= */
+[id] { scroll-margin-top: 80px; }
+
+/* =========================
+   PROGRESS BAR
+   ========================= */
+.progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), #D62976, var(--accent));
+    z-index: 2000;
+    transition: width 0.1s linear;
+    pointer-events: none;
+}
+
+/* =========================
+   SWAP SEARCH (Substitutions)
+   ========================= */
+.search-wrap { margin-bottom: var(--space-3); }
+.swap-search {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-family: inherit;
+    background: var(--surface);
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.swap-search:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(150, 47, 191, 0.12);
+}
+.swap-search::placeholder { color: var(--muted); }
+.no-results {
+    display: none;
+    width: 100%;
+    text-align: center;
+    color: var(--muted);
+    padding: var(--space-4) 0;
+    font-size: 1rem;
+}
+
+/* =========================
+   TRIED-IT TRACKER
+   ========================= */
+.tried-btn {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 8px 16px;
+    border: 2px solid var(--border);
+    border-radius: 9999px;
+    background: transparent;
+    color: var(--muted);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+    text-align: center;
+}
+.tried-btn:hover { border-color: var(--secondary); color: #355d1f; }
+.tried-btn--active {
+    background: rgba(139, 195, 74, 0.12);
+    border-color: var(--secondary);
+    color: #355d1f;
+}
+
+/* =========================
+   COPY LIST BUTTON
+   ========================= */
+.btn--copy {
+    background: var(--secondary);
+    box-shadow: 0 2px 8px rgba(139,195,74,.25);
+}
+.btn--copy:hover { background: #6ea832; transform: translateY(-2px); }
+
+/* =========================
+   FAQ PAGE
+   ========================= */
+.faq-list { list-style: none; margin: 0; padding: 0; }
+.faq-item details {
+    border-top: 1px solid var(--border);
+    border-bottom: none;
+    padding: 0;
+    margin: 0;
+}
+.faq-item:last-child details { border-bottom: 1px solid var(--border); }
+.faq-item details summary {
+    padding: var(--space-2) 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+.faq-item details summary::after { content: '+'; font-size: 20px; font-weight: 300; }
+.faq-item details[open] summary::after { transform: rotate(45deg); display: inline-block; }
+.faq-a {
+    padding: 0 0 var(--space-2);
+    color: var(--text);
+    line-height: 1.75;
+    max-width: 70ch;
+}
+
+/* =========================
+   404 PAGE
+   ========================= */
+.not-found {
+    text-align: center;
+    padding: var(--space-4) var(--space-2);
+}
+.not-found-code {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(80px, 15vw, 140px);
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+    opacity: 0.15;
+    display: block;
+    margin-bottom: -20px;
+}
+.not-found h1 {
+    font-size: clamp(24px, 4vw, 36px);
+    border: none;
+    margin-top: 0;
+}
+.not-found p { margin: 0 auto var(--space-3); }
+.not-found-links {
+    display: flex;
+    gap: var(--space-2);
+    justify-content: center;
+    flex-wrap: wrap;
 }

@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#962FBF" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Dessert Substitutions","url":"https://noguiltgrubbing.github.io/desserts.html","description":"Satisfying dessert swaps like avocado mousse, chia pudding, and banana nice cream."}</script>
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -43,54 +46,230 @@
     </div>
   </header>
 
-  <main id="main" class="wrapper">
-    <section class="section" aria-labelledby="desserts-heading">
-      <h1 id="desserts-heading">Healthier dessert substitutions</h1>
-      <p>Indulge your sweet tooth with smart swaps that keep the flavor and dial up the nutrition.</p>
+  <main id=”main” class=”wrapper”>
+    <nav class=”breadcrumb” aria-label=”Breadcrumb”>
+      <ol>
+        <li><a href=”index.html”>Home</a></li>
+        <li><a href=”substitutions.html”>Substitutions</a></li>
+        <li aria-current=”page”>Desserts</li>
+      </ol>
+    </nav>
+
+    <section class=”section” aria-labelledby=”desserts-heading”>
+      <h1 id=”desserts-heading”>Healthier dessert substitutions</h1>
+      <p>Satisfy your sweet tooth with swaps that taste indulgent and happen to be genuinely better for you.</p>
     </section>
 
-    <section class="section" aria-labelledby="dessert-list-heading">
-      <h2 id="dessert-list-heading" class="sr-only">Dessert substitution ideas</h2>
+    <section class=”section” id=”dessert-list” aria-labelledby=”dessert-list-heading”>
+      <h2 id=”dessert-list-heading” class=”sr-only”>Dessert substitution ideas</h2>
+      <div class=”grid”>
 
-      <div class="grid">
-        <article class="card">
-          <h3>1. Avocado chocolate mousse</h3>
-          <p>Blend ripe avocado, cocoa powder, a pinch of salt, and a touch of maple or dates for silky, dairy-free mousse.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🥑</span>
+            <h3>Avocado mousse for heavy cream mousse</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--healthy-fats”>Healthy fats</span>
+            <span class=”badge badge--lower-sugar”>Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Ripe avocado blends into a silky, dairy-free base using heart-healthy monounsaturated fats. Add cocoa powder, maple syrup, and a pinch of salt — it genuinely tastes like chocolate mousse.</p>
+            <ul class=”mini-list”>
+              <li>Topped with raspberries and a mint sprig</li>
+              <li>Piped onto cupcakes as a chocolate frosting alternative</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>2. Chia seed pudding for creamy desserts</h3>
-          <p>Stir chia into almond or dairy milk with vanilla; chill overnight. Add fruit for fiber + omega-3s.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🍌</span>
+            <h3>Banana “nice” cream for ice cream</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--lower-sugar”>Lower sugar</span>
+            <span class=”badge badge--vitamins”>Vitamins</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Frozen bananas blended alone create a naturally creamy, soft-serve texture — no dairy, no added sugar, and potassium to boot. Freeze ripe bananas overnight before blending.</p>
+            <ul class=”mini-list”>
+              <li>Peanut butter nice cream: add 2 tbsp PB before blending</li>
+              <li>Strawberry swirl: blend in a cup of frozen strawberries</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>3. Banana “nice” cream for ice cream</h3>
-          <p>Blend frozen bananas (and a splash of milk) until soft-serve smooth. Optional: peanut butter or cocoa.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🌱</span>
+            <h3>Chia pudding for custard or pudding</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--fiber”>Fiber+</span>
+            <span class=”badge badge--omega”>Omega-3</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>3 tbsp chia seeds + 1 cup milk, stirred and refrigerated overnight, becomes thick and creamy. Each serving delivers 10g fiber and plant-based omega-3s.</p>
+            <ul class=”mini-list”>
+              <li>Coconut milk + vanilla + mango chunks on top</li>
+              <li>Cocoa chia pudding + banana slices + peanut butter drizzle</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>4. Whole-wheat flour for white flour</h3>
-          <p>Swap 50–100% in muffins and quick breads to boost fiber and nutrients without losing tenderness.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🟫</span>
+            <h3>Black bean brownies for regular brownies</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--protein”>Protein+</span>
+            <span class=”badge badge--fiber”>Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Replace most of the flour and fat with one can of black beans — the brownies come out fudgy with 4× the fiber. You genuinely cannot taste the beans once cocoa and vanilla are added.</p>
+            <ul class=”mini-list”>
+              <li>Add dark chocolate chips for extra richness</li>
+              <li>Swirl in 2 tbsp peanut butter before baking</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>5. Natural nut butters for frosting</h3>
-          <p>Whisk peanut or almond butter with a little honey and yogurt for a creamy, protein-rich topping.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🍡</span>
+            <h3>Date + nut energy balls for candy bars</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--fiber”>Fiber+</span>
+            <span class=”badge badge--healthy-fats”>Healthy fats</span>
+            <span class=”badge badge--lower-sugar”>Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Medjool dates bind everything naturally and provide caramel-like sweetness. Pulse with nuts and cocoa powder in a food processor, roll into balls, and refrigerate. No baking, ready in 10 minutes.</p>
+            <ul class=”mini-list”>
+              <li>Peanut date balls rolled in cocoa powder</li>
+              <li>Cashew + vanilla + coconut date bites</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>6. Fresh fruit for candy</h3>
-          <p>Go for fruit or warm compotes—sweetness with vitamins, antioxidants, and water content.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🍦</span>
+            <h3>Frozen yogurt bark for ice cream bars</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--protein”>Protein+</span>
+            <span class=”badge badge--lower-sugar”>Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Spread Greek yogurt on parchment-lined baking sheet, scatter your toppings, freeze 2 hours. Snap into pieces. High protein, no churning, no machine needed.</p>
+            <ul class=”mini-list”>
+              <li>Yogurt + mixed berries + drizzle of honey</li>
+              <li>Yogurt + granola + dark chocolate chips + coconut flakes</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>7. Oatmeal cookies for traditional cookies</h3>
-          <p>Use oats + mashed banana or applesauce to reduce added sugar and add chew with more fiber.</p>
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🌾</span>
+            <h3>Whole-wheat flour for white flour (50% swap)</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--fiber”>Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Start with a 50/50 blend — you won't notice a texture difference in muffins, banana bread, or pancakes, but you'll nearly double the fiber content. Go 100% for dense bakes like energy bars.</p>
+            <ul class=”mini-list”>
+              <li>Whole-wheat banana muffins with walnuts</li>
+              <li>Oat + whole-wheat chocolate chip cookies</li>
+            </ul>
+          </details>
         </article>
+
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🍎</span>
+            <h3>Unsweetened applesauce for butter in baking</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--lower-fat”>Lower fat</span>
+            <span class=”badge badge--lower-sugar”>Lower sugar</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Swap butter or oil 1:1 in most quick breads and muffins. It adds moisture and natural sweetness while significantly cutting fat. Works best in recipes that are already moist and dense.</p>
+            <ul class=”mini-list”>
+              <li>Applesauce banana bread — no added oil needed</li>
+              <li>Applesauce carrot muffins with cinnamon</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🥜</span>
+            <h3>Nut butter for frosting and heavy toppings</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--protein”>Protein+</span>
+            <span class=”badge badge--healthy-fats”>Healthy fats</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Whisk peanut or almond butter with a little Greek yogurt, honey, and vanilla for a creamy, protein-rich topping that's still rich enough to satisfy.</p>
+            <ul class=”mini-list”>
+              <li>PB + yogurt + honey frosting on chocolate muffins</li>
+              <li>Almond butter drizzle over nice cream or baked fruit</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class=”card swap”>
+          <div class=”swap-head”>
+            <span class=”swap-icon” aria-hidden=”true”>🥣</span>
+            <h3>Greek yogurt for cream cheese in dips &amp; frostings</h3>
+          </div>
+          <div class=”badges”>
+            <span class=”badge badge--protein”>Protein+</span>
+            <span class=”badge badge--lower-fat”>Lower fat</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Blend full-fat Greek yogurt until totally smooth for a cream cheese-adjacent base with 3× the protein and half the fat. Add powdered sugar + vanilla for frosting, or honey + lemon for a fruit dip.</p>
+            <ul class=”mini-list”>
+              <li>Greek yogurt + honey + lemon zest as a fruit dip</li>
+              <li>Whipped yogurt + powdered sugar + vanilla as a lighter cake topping</li>
+            </ul>
+          </details>
+        </article>
+
       </div>
 
-      <p style="margin-top: var(--space-3);">
-        <a class="btn" href="substitutions.html">Back to all substitutions</a>
+      <article class=”card tip” style=”margin-top: var(--space-3);”>
+        <h3>No-bake dessert starter ideas</h3>
+        <ul class=”mini-list”>
+          <li><strong>5-minute fix:</strong> Banana nice cream + peanut butter + dark chocolate drizzle</li>
+          <li><strong>Prep-ahead:</strong> Chia pudding with coconut milk — make 4 jars Sunday, done all week</li>
+          <li><strong>Batch snack:</strong> Date + almond balls — lasts a week in the fridge, 2 months frozen</li>
+        </ul>
+        <p style=”margin-top: 12px;”>
+          <a class=”btn” href=”meal-planning.html”>Build these into your meal plan</a>
+        </p>
+      </article>
+
+      <p style=”margin-top: var(--space-3);”>
+        <a class=”btn” href=”substitutions.html”>Back to all substitutions</a>
       </p>
     </section>
   </main>
@@ -104,6 +283,7 @@
         <li><a href="nutrition.html">Nutrition</a></li>
         <li><a href="meal-planning.html">Meal Planning</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
   </footer>

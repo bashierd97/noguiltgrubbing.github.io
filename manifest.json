@@ -1,0 +1,17 @@
+{
+  "name": "No Guilt Grubbing",
+  "short_name": "NGG",
+  "description": "Simple food swaps, balanced nutrition, and meal planning that fits real life.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F6F1FA",
+  "theme_color": "#962FBF",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

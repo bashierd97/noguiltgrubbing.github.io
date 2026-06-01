@@ -16,6 +16,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#962FBF" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Entree Substitutions","url":"https://noguiltgrubbing.github.io/entrees.html","description":"Healthier entree swaps like cauliflower rice, zoodles, and chickpeas."}</script>
 </head>
 <body>
   <!-- Accessible skip link -->
@@ -44,50 +47,226 @@
   </header>
 
   <main id="main" class="wrapper">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="substitutions.html">Substitutions</a></li>
+        <li aria-current="page">Entrees</li>
+      </ol>
+    </nav>
+
     <section class="section" aria-labelledby="entrees-heading">
       <h1 id="entrees-heading">Healthier entree substitutions</h1>
-      <p>Small swaps, big payoff—keep the comfort while adding nutrients, fiber, and balance to your favorite mains.</p>
+      <p>Small swaps, big payoff—keep the comfort of your favorite mains while boosting fiber, protein, and nutrients.</p>
     </section>
 
-    <section class="section" aria-labelledby="entree-list-heading">
+    <section class="section" id="entree-list" aria-labelledby="entree-list-heading">
       <h2 id="entree-list-heading" class="sr-only">Entree substitution ideas</h2>
-
       <div class="grid">
-        <article class="card">
-          <h3>1. Cauliflower for rice</h3>
-          <p>Much lower in calories and carbs than white rice, with bonus fiber and micronutrients. Great under stir-fries or curries.</p>
+
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥦</span>
+            <h3>Cauliflower rice for white rice</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-carb">Lower carbs</span>
+            <span class="badge badge--fiber">Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>One cup of cauliflower rice has ~25 calories vs. ~200 in white rice, with extra fiber and vitamins. Pulse raw florets in a food processor or buy it frozen.</p>
+            <ul class="mini-list">
+              <li>Under stir-fry with egg and soy sauce</li>
+              <li>Base for a chicken curry or Thai basil bowl</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>2. Zucchini noodles for pasta</h3>
-          <p>Lighten pasta dishes by swapping in zoodles for part or all of the noodles. Toss with marinara or pesto and a protein.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥒</span>
+            <h3>Zucchini noodles for pasta</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-carb">Lower carbs</span>
+            <span class="badge badge--vitamins">Vitamins</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Zoodles cut carbs significantly while adding vitamin C and water content. Use a spiralizer or buy pre-made. Works best with chunky, protein-rich sauces.</p>
+            <ul class="mini-list">
+              <li>Zoodles + marinara + turkey meatballs</li>
+              <li>Pesto zoodles with grilled chicken and cherry tomatoes</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>3. Cauliflower steaks for meat</h3>
-          <p>Roast thick slices with olive oil, garlic, and spices. A hearty, plant-forward center that takes on flavor beautifully.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🎃</span>
+            <h3>Spaghetti squash for pasta</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-carb">Lower carbs</span>
+            <span class="badge badge--vitamins">Vitamins</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Roast halved spaghetti squash cut-side down at 400°F for 40 min, then fork-scrape into noodle-like strands. Naturally sweet and hearty.</p>
+            <ul class="mini-list">
+              <li>With classic marinara and parmesan</li>
+              <li>As a base for chicken cacciatore or meat sauce</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>4. Chickpeas for ground meat</h3>
-          <p>Mash and season for tacos, sloppy joes, or patties. Protein + fiber = filling and budget-friendly.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥬</span>
+            <h3>Lettuce wraps for tortillas or buns</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-carb">Lower carbs</span>
+            <span class="badge badge--vitamins">Vitamins</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Butter lettuce and romaine leaves hold fillings surprisingly well and add vitamins K and C. You'll cut 20–30g of refined carbs per serving.</p>
+            <ul class="mini-list">
+              <li>Asian-style chicken and mushroom lettuce cups</li>
+              <li>Turkey burger patty in a romaine bun with your usual toppings</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>5. Portobellos for burger patties</h3>
-          <p>Grilled portobello caps deliver a meaty texture with fewer calories. Load with your usual burger toppings.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🫘</span>
+            <h3>Chickpeas for ground meat</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--fiber">Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>A can of chickpeas has ~15g protein and 12g fiber — comparable to ground beef per serving, with zero saturated fat and a fraction of the cost.</p>
+            <ul class="mini-list">
+              <li>Mashed chickpea tacos with cumin and chili powder</li>
+              <li>Chickpea "sloppy joes" with tomato sauce on whole wheat buns</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>6. Sweet potatoes for white potatoes</h3>
-          <p>More vitamin A and fiber. Use for baked wedges, mash, or as a base for bowls with protein and veggies.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🟤</span>
+            <h3>Lentils for ground beef in sauces</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--fiber">Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Green or brown lentils cooked down in tomato sauce develop a texture nearly identical to ground beef — with 18g protein and 16g fiber per cup, and far less saturated fat.</p>
+            <ul class="mini-list">
+              <li>Lentil bolognese over whole-wheat pasta</li>
+              <li>Lentil-stuffed bell peppers with feta and herbs</li>
+            </ul>
+          </details>
         </article>
 
-        <article class="card">
-          <h3>7. Greek yogurt for sour cream</h3>
-          <p>Same tangy creaminess, more protein and less fat. Perfect in sauces, dressings, and dolloped on chilis or tacos.</p>
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🍗</span>
+            <h3>Ground turkey or chicken for beef mince</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--lower-fat">Lower fat</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Lean ground turkey or chicken matches beef's protein while cutting saturated fat by 60–70%. Season boldly — it takes on flavor even better than beef.</p>
+            <ul class="mini-list">
+              <li>Turkey bolognese — add fennel and red wine for depth</li>
+              <li>Chicken meatballs simmered in tomato sauce</li>
+            </ul>
+          </details>
         </article>
+
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🍄</span>
+            <h3>Portobello caps for burger patties</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--lower-carb">Lower carbs</span>
+            <span class="badge badge--lower-fat">Lower fat</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Marinate in balsamic, olive oil, and garlic then grill for 5 minutes per side. Delivers a genuinely meaty, savory bite that satisfies the burger craving.</p>
+            <ul class="mini-list">
+              <li>Full burger setup — lettuce, tomato, avocado, mustard</li>
+              <li>Stuffed with spinach, feta, and sun-dried tomatoes</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🍠</span>
+            <h3>Sweet potatoes for white potatoes</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--vitamins">Vitamins</span>
+            <span class="badge badge--fiber">Fiber+</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Higher in vitamin A, fiber, and antioxidants than white potatoes. The natural sweetness means you need less topping — butter, cheese, salt — to feel satisfied.</p>
+            <ul class="mini-list">
+              <li>Baked wedges with smoked paprika and olive oil</li>
+              <li>Mashed sweet potato with cinnamon and a drizzle of honey</li>
+            </ul>
+          </details>
+        </article>
+
+        <article class="card swap">
+          <div class="swap-head">
+            <span class="swap-icon" aria-hidden="true">🥣</span>
+            <h3>Greek yogurt for sour cream in sauces</h3>
+          </div>
+          <div class="badges">
+            <span class="badge badge--protein">Protein+</span>
+            <span class="badge badge--lower-fat">Lower fat</span>
+          </div>
+          <details>
+            <summary>Why this works + quick ideas</summary>
+            <p>Same tangy creaminess at 3× the protein and a fraction of the saturated fat. Stir in at the end of cooking (off heat) to prevent curdling.</p>
+            <ul class="mini-list">
+              <li>Creamy chicken taco sauce or stroganoff base</li>
+              <li>Dolloped on chili, soup, or baked potatoes</li>
+            </ul>
+          </details>
+        </article>
+
       </div>
+
+      <article class="card tip" style="margin-top: var(--space-3);">
+        <h3>Quick weeknight dinner combos</h3>
+        <ul class="mini-list">
+          <li><strong>Bowl night:</strong> Cauliflower rice + grilled chicken + roasted veg + Greek yogurt sauce</li>
+          <li><strong>Pasta night:</strong> Zoodles or spaghetti squash + lentil bolognese + parmesan</li>
+          <li><strong>Taco night:</strong> Lettuce wraps + seasoned chickpeas + salsa + avocado</li>
+        </ul>
+        <p style="margin-top: 12px;">
+          <a class="btn" href="meal-planning.html">Build these into your meal plan</a>
+        </p>
+      </article>
 
       <p style="margin-top: var(--space-3);">
         <a class="btn" href="substitutions.html">Back to all substitutions</a>
@@ -104,6 +283,7 @@
         <li><a href="nutrition.html">Nutrition</a></li>
         <li><a href="meal-planning.html">Meal Planning</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
   </footer>

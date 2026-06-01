@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://noguiltgrubbing.github.io/</loc><priority>1.0</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/substitutions.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/nutrition.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/meal-planning.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/breakfast.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/entrees.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/desserts.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/snacks.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/about.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://noguiltgrubbing.github.io/faq.html</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+</urlset>
