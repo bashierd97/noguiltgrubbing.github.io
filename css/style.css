@@ -174,33 +174,70 @@ li { margin-bottom: 8px; }
 /* =========================
    HERO
    ========================= */
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
 .hero {
-    height: 68vh;
+    height: 76vh;
+    min-height: 420px;
     background: url('images/hero-bg.jpg') center/cover no-repeat;
     display: flex; align-items: center; position: relative;
     margin: 0 0 var(--space-4);
-    border-radius: 12px;                  /* ADDED */
-    overflow: hidden;                      /* keeps overlay rounded */
+    border-radius: 12px;
+    overflow: hidden;
 }
 .hero::before {
     content: '';
     position: absolute; inset: 0;
-    background: rgba(0,0,0,.35);
+    background: linear-gradient(
+        105deg,
+        rgba(14, 11, 18, 0.88) 0%,
+        rgba(100, 30, 140, 0.58) 45%,
+        rgba(0, 0, 0, 0.12) 100%
+    );
 }
 .hero-content {
     position: relative; z-index: 1; color: #fff;
-    max-width: 640px;
+    max-width: 600px;
     padding: var(--space-3);
-    background-color: rgba(33,33,33,.55); /* darker = better contrast */
-    border-radius: 12px;
-    backdrop-filter: blur(2px);
+    animation: heroFadeIn 0.8s ease-out both;
+}
+.hero-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(255, 160, 0, 0.15);
+    border: 1px solid rgba(255, 160, 0, 0.35);
+    padding: 5px 14px;
+    border-radius: 9999px;
+    margin-bottom: 18px;
 }
 .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 5vw, 52px);
-    margin-bottom: 12px; color: #fff; border: none;
+    font-size: clamp(36px, 5.5vw, 60px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: #fff;
+    border: none;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
 }
-.hero-content p { color: #fff; margin-bottom: var(--space-3); }
+.hero-content p {
+    color: rgba(255, 255, 255, 0.90);
+    margin-bottom: var(--space-3);
+    font-size: 1.1rem;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+.hero-ctas {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    align-items: center;
+}
 
 /* =========================
    BUTTONS (UNIFIED)
@@ -289,8 +326,9 @@ footer p { color: #fff; }
 @media (max-width: 768px) {
     nav { flex-direction: column; text-align: center; }
     nav ul { margin-top: var(--space-1); flex-direction: column; gap: 6px; }
-    .hero { height: 56vh; }
+    .hero { height: 60vh; }
     .hero-content { padding: var(--space-2); }
+    .hero-ctas { flex-direction: column; align-items: flex-start; }
 }
 
 /* ===== NGG brand tint + auto dark mode ===== */
@@ -334,7 +372,7 @@ p { color: var(--text); }
 }
 
 /* Small contrast improvements on tint */
-.theme-tint .hero-content { background-color: rgba(33,33,33,.50); }
+.theme-tint .hero-content { background: none; }
 .theme-tint nav a:hover { background-color: rgba(255,255,255,.92); color: var(--primary); }
 .theme-tint .btn { box-shadow: 0 2px 8px rgba(214,41,118,.25); }
 
