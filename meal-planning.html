@@ -2,6 +2,7 @@
 <html lang="en" class="theme-tint">
 <head>
   <meta charset="UTF-8" />
+  <script>!function(){var t=localStorage.getItem('ngg-theme');t&&document.documentElement.classList.add('dark'===t?'dark-mode':'light-mode')}();</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meal Planning | No Guilt Grubbing</title>
   <meta name="description" content="A simple, practical guide to meal planning—clear steps, a shopping list framework, and a sample two-day plan." />
@@ -73,7 +74,7 @@
       <a href="#template">Weekly template</a>
       <a href="#shopping">Shopping</a>
       <a href="#prep">Prep &amp; batch</a>
-      <a href="#sample">Sample plan</a>
+      <a href="#sample">5-day plan</a>
     </nav>
 
     <!-- Topic cards -->
@@ -154,7 +155,6 @@
     <!-- Shopping list -->
     <section class="section" id="shopping" aria-labelledby="shopping-heading">
       <h2 id="shopping-heading">Make a shopping list (by aisle)</h2>
-      <button id="copy-list-btn" class="btn btn--copy" style="margin-bottom: var(--space-2);">📋 Copy shopping list</button>
       <div class="grid">
         <article class="card">
           <h3>Sections to use</h3>
@@ -204,23 +204,75 @@
 
     <!-- Sample plan -->
     <section class="section" id="sample" aria-labelledby="sample-heading">
-      <h2 id="sample-heading">Sample 2-day meal plan</h2>
+      <h2 id="sample-heading">Sample 5-day meal plan</h2>
+      <p>A full Mon–Fri plan you can copy, adapt, or rotate. Each day includes protein at every meal and vegetables at lunch and dinner.</p>
 
-      <article class="card">
-        <h3>Monday</h3>
-        <p>
-          <strong>Breakfast:</strong> Oatmeal with berries and nuts<br />
-          <strong>Lunch:</strong> Grilled chicken salad with mixed greens<br />
-          <strong>Dinner:</strong> Baked salmon with quinoa and roasted vegetables
-        </p>
-      </article>
+      <div class="grid">
+        <article class="card">
+          <h3>Monday</h3>
+          <p>
+            <strong>Breakfast:</strong> Oatmeal with mixed berries, walnuts, and a drizzle of honey<br />
+            <strong>Snack:</strong> Apple slices + almond butter<br />
+            <strong>Lunch:</strong> Grilled chicken salad — mixed greens, cherry tomatoes, cucumber, olive oil + lemon dressing<br />
+            <strong>Snack:</strong> Greek yogurt + a small handful of almonds<br />
+            <strong>Dinner:</strong> Baked salmon with quinoa and roasted vegetables (broccoli, zucchini, red pepper)
+          </p>
+        </article>
 
-      <article class="card">
-        <h3>Tuesday</h3>
-        <p>
-          <strong>Breakfast:</strong> Greek yogurt with granola and honey<br />
-          <strong>Lunch:</strong> Turkey and avocado wrap with carrot sticks<br />
-          <strong>Dinner:</strong> Stir-fried tofu with brown rice and broccoli
+        <article class="card">
+          <h3>Tuesday</h3>
+          <p>
+            <strong>Breakfast:</strong> Greek yogurt parfait with granola, berries, and a drizzle of honey<br />
+            <strong>Snack:</strong> Veggie sticks with hummus<br />
+            <strong>Lunch:</strong> Turkey and avocado wrap on a whole-grain tortilla with carrot sticks<br />
+            <strong>Snack:</strong> Air-popped popcorn<br />
+            <strong>Dinner:</strong> Stir-fried tofu with cauliflower rice, edamame, and soy-ginger sauce
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Wednesday</h3>
+          <p>
+            <strong>Breakfast:</strong> Scrambled eggs (2–3) with spinach, mushrooms, and whole-grain toast<br />
+            <strong>Snack:</strong> Banana + a small handful of mixed nuts<br />
+            <strong>Lunch:</strong> Lentil soup with a side salad (leafy greens, cucumber, olive oil)<br />
+            <strong>Snack:</strong> Rice cake with nut butter and sliced banana<br />
+            <strong>Dinner:</strong> Baked chicken thighs with sweet potato wedges and steamed green beans
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Thursday</h3>
+          <p>
+            <strong>Breakfast:</strong> Chia pudding (prepped the night before) with sliced mango and coconut flakes<br />
+            <strong>Snack:</strong> Cottage cheese with fresh berries<br />
+            <strong>Lunch:</strong> Tuna salad (tuna + Greek yogurt + celery + mustard) on whole-grain bread with veggie sticks<br />
+            <strong>Snack:</strong> Dark chocolate (2 squares) + a handful of almonds<br />
+            <strong>Dinner:</strong> Turkey meatballs in tomato sauce with zucchini noodles and parmesan
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Friday</h3>
+          <p>
+            <strong>Breakfast:</strong> Protein smoothie — spinach, frozen mango, Greek yogurt, almond milk, chia seeds<br />
+            <strong>Snack:</strong> Edamame with sea salt<br />
+            <strong>Lunch:</strong> Buddha bowl — brown rice, roasted chickpeas, cucumber, avocado, shredded carrot, tahini dressing<br />
+            <strong>Snack:</strong> Fresh fruit with a small handful of walnuts<br />
+            <strong>Dinner:</strong> Salmon tacos in lettuce wraps — baked salmon, cabbage slaw, Greek yogurt sauce, lime
+          </p>
+        </article>
+      </div>
+
+      <article class="card tip" style="margin-top: var(--space-3);">
+        <h3>Make it work for you</h3>
+        <ul class="mini-list">
+          <li><strong>Repeat breakfasts:</strong> Rotate just 2–3 options Mon–Fri to reduce morning decisions</li>
+          <li><strong>Batch cook Sunday:</strong> Grill proteins, cook a pot of grains, and roast a tray of veg — that covers 3–4 dinners</li>
+          <li><strong>Flexible dinners:</strong> Keep Wed/Thu dinners as "leftovers or freestyle" nights to reduce planning pressure</li>
+        </ul>
+        <p style="margin-top: 12px;">
+          <button id="copy-list-btn" class="btn btn--copy">📋 Copy shopping list</button>
         </p>
       </article>
 

@@ -146,6 +146,28 @@
         requestAnimationFrame(tick);
     }
 
+    // ── Rotating "Try this today" tip ─────────────────────
+    var swapTips = [
+        { icon: '💡', text: 'Swap sour cream for Greek yogurt — same creaminess, 3× the protein, works in tacos, dips, baked potatoes, and more.', link: 'breakfast.html', cta: 'See breakfast swaps' },
+        { icon: '🥦', text: 'Replace white rice with cauliflower rice tonight — one cup saves ~175 calories and adds fiber without changing the flavors you love.', link: 'entrees.html', cta: 'See entree swaps' },
+        { icon: '🍌', text: 'Freeze ripe bananas tonight, blend tomorrow for "nice" cream — no dairy, no added sugar, genuinely smooth soft-serve.', link: 'desserts.html', cta: 'See dessert swaps' },
+        { icon: '🥕', text: 'Pre-cut a bag of veggie sticks and keep them at eye level in your fridge — they\'ll get eaten just as fast as chips would.', link: 'snacks.html', cta: 'See snack swaps' },
+        { icon: '🫘', text: 'Add a can of chickpeas to tonight\'s stir-fry — 15g protein, 12g fiber, costs under $1, and takes 30 seconds to add.', link: 'entrees.html', cta: 'See entree swaps' },
+        { icon: '🍿', text: 'Swap chips for air-popped popcorn — 3 cups is ~100 calories, more fiber, and you can season it any way you like.', link: 'snacks.html', cta: 'See snack swaps' },
+        { icon: '🥣', text: 'Make overnight chia pudding tonight: 3 tbsp chia + 1 cup milk + vanilla, stir and refrigerate. Breakfast is ready by morning.', link: 'breakfast.html', cta: 'See breakfast swaps' },
+        { icon: '🟫', text: 'Try black bean brownies — blend one can of beans into your batter. You won\'t taste them, but you\'ll get 4× the fiber of regular brownies.', link: 'desserts.html', cta: 'See dessert swaps' }
+    ];
+    var tipSection = document.querySelector('.featured-swap');
+    if (tipSection) {
+        var tip = swapTips[Math.floor(Math.random() * swapTips.length)];
+        var iconEl = tipSection.querySelector('.featured-swap-icon');
+        var textEl = tipSection.querySelector('.featured-swap-text');
+        var linkEl = tipSection.querySelector('.btn');
+        if (iconEl) iconEl.textContent = tip.icon;
+        if (textEl) textEl.textContent = tip.text;
+        if (linkEl) { linkEl.href = tip.link; linkEl.textContent = tip.cta; }
+    }
+
     // ── Back to top ────────────────────────────────────────
     var backBtn = document.createElement('button');
     backBtn.className = 'back-to-top';
